@@ -1,0 +1,3577 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+\let\stdpart\part
+\renewcommand*{\part}{\clearpage\stdpart}
+\rhead{}
+\rfoot{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 14
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 0
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename page_de_garde.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chead{
+\backslash
+copyright 2012 markas-al-nour.org}
+\end_layout
+
+\end_inset
+
+Ceci est la troisième partie du cours de base fait par le centre Markas-al-Nour.
+ La première partie a fait l'introduction à l'informatique, l'utilisation
+ du matériel, présentation du Microsoft Windows et du logiciel Microsoft
+ Word pour écrire une lettre et une simple facture.
+ Le deuxième partie a approfondit Microsoft Word et a donné une introduction
+ au tableur Excel.
+ 
+\end_layout
+
+\begin_layout Standard
+Cette troisième partie a pour but de vous introduire au logiciel Microsoft
+ PowerPoint ainsi que l'internet.
+ Vous allez apprendre l'historique de l'informatique, le fonctionnement
+ d'un logiciel de navigation et les bases de conaissances de comment fonctionne
+ le courriel.
+ Tout au long vous serez guidés par des exemples.
+\end_layout
+
+\begin_layout Section
+Copyright et Copyleft
+\end_layout
+
+\begin_layout Standard
+Ce document est sous copyleft CC BY-SA, ce qui veut dire que vous pouvez
+ faire avec ce que vous voulez, avec deux conditions:
+\end_layout
+
+\begin_layout Itemize
+Toujours garder les auteurs originaux dans l'œuvre
+\end_layout
+
+\begin_layout Itemize
+Mettre l'œuvre sous la même licence, donc aussi CC BY-SA
+\end_layout
+
+\begin_layout Standard
+Pour plus d'informations, vous pouvez aller sur 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.creativecommons.org/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Auteurs
+\end_layout
+
+\begin_layout Standard
+Ce document a été écrit par Samuel Schoofs de Service au Sahel Tchad, et
+ de Linus Gasser, de ProFeDA.
+ La relecture a été fait par Viviane Gasser.
+\end_layout
+
+\begin_layout Part
+PowerPoint - Présentation de l'interface
+\end_layout
+
+\begin_layout Standard
+PowerPoint est un logiciel de présentation devéloppé par Microsoft.
+ Il fait partie de la suite Microsoft Office, qui inclut aussi les logiciels
+ Word et Excel avec qui vous avez déjà travaillé.
+ PowerPoint est conçu pour présenter de l'information, que ça soit sous
+ forme de texte, données, tableaux, images, sons ou vidéos.
+ Souvent les présentations sont faites avec l'aide d'un projeteur qui permet
+ le présentateur de parler aux auditoires pendant qu'ils regardent l'information
+ de son présentation.
+\end_layout
+
+\begin_layout Section
+Diapositives
+\end_layout
+
+\begin_layout Standard
+Les présentations sont en forme de plusieurs pages, appelés diapositives
+ ou 
+\begin_inset Quotes eld
+\end_inset
+
+slides
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Plusieurs types de diapositives sont disponibles selon les besoins de l'utilisa
+teur.
+ 
+\end_layout
+
+\begin_layout Subsection
+Diapositive de titre
+\end_layout
+
+\begin_layout Standard
+Une diapositive de titre est typiquement mis avant tout ; il contient le
+ titre est le sous-titre.
+ L'image si-dessous présente une diapositive de titre vide, c'est a dire
+ qu'il y a deux 
+\emph on
+zones de textes
+\emph default
+ où vous pouvez ajouter un titre là où il dit 
+\begin_inset Quotes eld
+\end_inset
+
+Cliquez pour ajouter un titre
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Diapositive-de-titre.png
+	lyxscale 25
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Titre_de_diapositive"
+
+\end_inset
+
+Diapositive de Titre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diapositive avec contenu
+\end_layout
+
+\begin_layout Standard
+Une diapositive avec contenu contient un titre en haut et un zone de travail
+ où plusieurs types d'informations peuvent être présentées.
+ Le zone de texte en bas met le texte dans une liste à puces par défaut.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Titre-et-contenu.png
+	lyxscale 25
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diapositive_de_titre_et_contenu"
+
+\end_inset
+
+Image de diapositive de titre et contenu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Exemple d'une présentation
+\end_layout
+
+\begin_layout Standard
+Le professeur va vous présenter un exemple d'une présentation.
+\end_layout
+
+\begin_layout Section
+Affichage
+\end_layout
+
+\begin_layout Standard
+Quand vous démarrez le logiciel PowerPoint, il vous présente une nouvelle
+ présentation vide.
+ Comme pour les logiciels Word et Excel, le Ruban se trouve en haut ainsi
+ que plusieurs onglets et le bouton Microsoft Office.
+\end_layout
+
+\begin_layout Standard
+Notez les noms des Onglets : 
+\emph on
+Accueil, Insertion, Création, Animations, Diaporama, Révision 
+\emph default
+et
+\emph on
+ Affichage
+\emph default
+.
+ Quelques uns de ses onglets se ressemblent à ceux de Word ou Excel, mais
+ d'autres sont spécialisés pour les tâches spécifiques à PowerPoint.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Affichage.png
+	lyxscale 25
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Affichage"
+
+\end_inset
+
+Affichage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un aperçu des diapositives déjà créées se trouve à gauche.
+\end_layout
+
+\begin_layout Section
+Zones de texte
+\end_layout
+
+\begin_layout Standard
+Une diapositive peut contenir plusieurs 
+\emph on
+zones de texte.
+
+\emph default
+ Dedans, on peut taper des titres, des phrases, ou des paragraphs.
+ Comme dans Microsoft Word et Excel, on peut changer la police, la taille
+ de police et la couleur.
+ Aussi on a la possibilité des aspects du paragraphe : de mettre une liste
+ à puces, une liste numérotée, aligner à gauche, centrer ou aligner à droite.
+ Tous ces options de traitement de texte sont disponibles depuis l'onglet
+ 
+\emph on
+Accueil
+\emph default
+ avec les mêmes boutons qu'on connait déjà.
+\end_layout
+
+\begin_layout Section
+Exercice
+\end_layout
+
+\begin_layout Standard
+Démarrez PowerPoint.
+ (Cliquez démarrer – Tous les programmes – Microsoft Office – Microsoft
+ PowerPoint 2007)
+\end_layout
+
+\begin_layout Standard
+Une nouvelle présentation sera déjà sur l'écran avec une diapositive de
+ titre.
+ Cliquez la zone de texte qui dit 
+\begin_inset Quotes eld
+\end_inset
+
+Cliquez pour ajouter un tire
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Ce texte disparaîtra, et le curseur vous indiquera que vous pouvez tapez
+ le titre dedans.
+ Tapez 
+\begin_inset Quotes eld
+\end_inset
+
+Découverte de Tchad
+\begin_inset Quotes erd
+\end_inset
+
+ et dans le deuxième zone de texte (le sous-titre), tapez vos noms.
+\end_layout
+
+\begin_layout Standard
+Insérez une nouvelle diapositive à partir du bouton 
+\begin_inset Graphics
+	filename Nouvelle_diapositive.png
+	lyxscale 50
+
+\end_inset
+
+.
+ Vous allez voir que le bouton a deux parties : en cliquant la grande partie
+ en haut vous aurez une diapositive avec contenu.
+ En cliquant la partie en bas, vous aurez des options pour plusieurs modèles
+ de diapositives.
+ Pour maintenant, cliquez la grande partie ou selectionnez 
+\begin_inset Quotes eld
+\end_inset
+
+Titre et contenu
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sur cette nouvelle diapositive, mettez en titre, 
+\begin_inset Quotes eld
+\end_inset
+
+Villes du Tchad
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Cliquez dans le zone de texte en bas et mettez la liste à puces suivante
+ :
+\end_layout
+
+\begin_layout Itemize
+Moussoro
+\end_layout
+
+\begin_layout Itemize
+N'Djaména
+\end_layout
+
+\begin_layout Itemize
+Abéché
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+(ajoutez d'autres villes comme vous voulez)
+\end_layout
+
+\begin_layout Standard
+Insérez une nouvelle diapositive.
+ Mettez en titre 
+\begin_inset Quotes eld
+\end_inset
+
+Animaux habitant au Tchad
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Insérez des noms d'animaux (à moins cinq) dans la liste à puces.
+\end_layout
+
+\begin_layout Standard
+Enregistrez la présentation.
+ Comme d'habitude, on a le choix de sauvegarder depuis le bouton Microsoft
+ Office, avec les touches (Ctrl + S), ou avec le bouton de sauvegarde (il
+ se trouve en haut juste à droite du bouton Microsoft Office).
+ Choissisez un nom qui convient comme 
+\begin_inset Quotes eld
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Si le temps vous permettra, changez les tailles et couleurs des mots dans
+ vos listes à puces.
+ Vous pouvez revoir chaque diapositive en la sélectionnant depuis l'aperçu
+ des diapositives.
+\end_layout
+
+\begin_layout Part
+PowerPoint - Thèmes et Insertion
+\end_layout
+
+\begin_layout Standard
+Puisque PowerPoint est conçu pour aider la présentation de plusieurs types
+ d'information, il est important de savoir comment bénéficier de ses fonctionali
+tés graphiques.
+\end_layout
+
+\begin_layout Section
+Thèmes
+\end_layout
+
+\begin_layout Standard
+Microsoft PowerPoint mis à disposition plusieurs thèmes prédefinies, ou
+ modèles, qui permet à l'utilisateur de changer le style de chaque élément
+ de la présentation : police, couleurs, arrière, mise en page du titre,
+ etc.
+ Les thèmes sont disponibles depuis l'onglet 
+\emph on
+Création
+\emph default
+.
+ En cliquant sur la flèche en bas on peut voir tous les thèmes.
+\end_layout
+
+\begin_layout Standard
+On voit aussi une image arrière qui est gardée avec chaque diapositive dans
+ cette présentation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Tous-les-thèmes.png
+	lyxscale 25
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Bouton_des_thèmes"
+
+\end_inset
+
+Bouton des thèmes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ouvrir le fichier qui a été enregistré dans la partie précédant.
+ Cliquez l'ongle 
+\emph on
+Création
+\emph default
+ et puis la flèche en bas des thèmes.
+ Selectionnez un de ses thèmes prédefinies et regarder comment la présentation
+ change.
+\end_layout
+
+\begin_layout Section
+Insertion
+\end_layout
+
+\begin_layout Standard
+Maintenant on va traiter comment on peut insérer plusieurs types d'information.
+ Cliquez l'onglet 
+\emph on
+Insertion
+\emph default
+ et vous allez voir beaucoup de possibilités :
+\end_layout
+
+\begin_layout Subsection
+Tableaux
+\end_layout
+
+\begin_layout Standard
+Le bouton 
+\emph on
+Tableau
+\emph default
+ fonctionne comme on a vu avec Word.
+ Nous pouvons insérer un tableau en selectionnant le nombre de colonnes
+ et de lignes que nous avons besoin.
+ Une fois inséré, on peut ajouter des colonnes ou lignes, ou bien supprimer.
+\end_layout
+
+\begin_layout Standard
+Insérez une nouvelle diapositive, et mettez en titre 
+\begin_inset Quotes eld
+\end_inset
+
+Fêtes et jours fériés au Tchad
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans la zone de travail, insérez un tableau avec l'information suivante
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nom français
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1er décembre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fête nationale
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1er mai
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fête du travail
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11 août
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jour de l'Indépendance
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28 novembre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jour de la République
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 décembre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Noël
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aïd Alkabir
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aïd Alfitre
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Achoura'a
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hégire (nouvel an)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6 mai
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Le labétien
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lundi de Pâques
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Jours-fériés-au-Tchad"
+
+\end_inset
+
+Jours Fériés au Tchad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Images
+\end_layout
+
+\begin_layout Standard
+Aussi comme avec Word, on peut insérer des images dans notre fichier.
+ Sous l'onglet 
+\emph on
+Insertion
+\emph default
+, cliquez sur Image.
+ Recherchez l'image à insérer puis double-cliquez sur l'image à insérer.
+\end_layout
+
+\begin_layout Standard
+Dans vos présentations, insérez une nouvelle diapositive et donnez le titre
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Carte du Tchad
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Insérer une image de la carte du Tchad.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Need to put this image on a thumb drive to be shared across all the computers!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Tchad_carte.gif
+	lyxscale 33
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Carte du Tchad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Formes
+\end_layout
+
+\begin_layout Standard
+Les formes avec PowerPoint sont utiles pour illustrer une idée ou pour connecter
+ plusieurs images ou texte avec des flèches.
+\end_layout
+
+\begin_layout Standard
+Depuis la carte du Tchad que vous avez mise, insérez une flèche indiquant
+ là où vous êtes né(e).
+ Vous allez d'abord cliquez la bouton 
+\emph on
+Formes
+\emph default
+, puis vous cliquerez la petite image d'un flèche, puis vous allez cliquez
+ sur la diapositive : une fois indiquant où vous voulez mettre le pied de
+ la flèche et (toujours appuyant sur le bouton gauche de la souris) vous
+ allez indiquer où vous voulez la tête de la flèche.
+ Essayez plusieurs fois si besoin.
+\end_layout
+
+\begin_layout Subsection
+Zones de texte
+\end_layout
+
+\begin_layout Standard
+Parfois nos idées ne correspondent pas avec des listes à puces ou paragraphes
+ bien linéaires.
+ Pour faciliter la mise en page de vos idées, vous pouvez insérer des zones
+ de texte, en ajoutant la phrase qui corresponde à l'endroit.
+\end_layout
+
+\begin_layout Standard
+Insérez un zone de texte en cliquant la bouton 
+\emph on
+Zone de texte
+\emph default
+.
+ Comme pour l'insertion des formes, vous allez indiquer là où vous voulez
+ l'insérer.
+ Cliquez une fois pour un des quatre coins de la zone de texte eventuelle,
+ et toujours en appuyant sur le bouton de la souris, indiquez où se trouvera
+ le coin diagonal.
+\end_layout
+
+\begin_layout Standard
+Mettez un zone de texte à côté du pied de la flèche, et tapez le nom du
+ ville ou village où vous êtes né(e).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Carte-avec-flèche-et-ville.png
+	lyxscale 33
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+La carte du Tchad avec une flèche et le nom d'une ville
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+WordArt
+\end_layout
+
+\begin_layout Standard
+Insertion d'un champ WordArt (art de la parole en français) vous permettrez
+ de communiquer un texte avec un style particulier.
+ Vous aurez l'option de changer le remplissage de forme, le contour de forme
+ et les effets sur la forme.
+ Cliquez le bouton 
+\emph on
+WordArt
+\emph default
+ et puis insérez le champ de texte tout comme vous aviez fait avec les zones
+ de texte.
+ Quand vous tapez un mot ou une phrase, un nouveau onglet apparaîtra en
+ vous donnant des possibilités de tout changer.
+\end_layout
+
+\begin_layout Standard
+Choissisez vous-mêmes un mot ou une phrase que vous voulez ajouter à une
+ des diapositives déjà élaborée.
+\end_layout
+
+\begin_layout Subsection
+Numéro de diapositive
+\end_layout
+
+\begin_layout Standard
+Finalement nous pouvons ajouter des numéros de diapositive.
+ En ajoutant des numéros de diapositive, nous pouvons mieux communiquer
+ à nos auditoires et lecteurs combien de diapositives sont déjà déroulées.
+ Cliquez sur le bouton 
+\emph on
+Numéro de diapositive
+\emph default
+ et vous allez trouvez un menu comme dans l'image au-dessous :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Numéro-de-diapositive.png
+	lyxscale 33
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Numéro de diapositive
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depuis ce menu, vous pouvez cochez 
+\begin_inset Quotes eld
+\end_inset
+
+Numéro de diapositive
+\begin_inset Quotes erd
+\end_inset
+
+ ainsi de mettre la date et heure et un texte dans le pied de page.
+ Dès que vous avez tout changer comme vous souhaitez, cliquez sur le bouton
+ 
+\emph on
+Appliquer partout
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+N'oubliez pas de sauvegarder votre présentation d'aujourd'hui car nous allons
+ travailler à partir de la pour la prochaine partie.
+\end_layout
+
+\begin_layout Part
+PowerPoint - Trier et Présenter
+\end_layout
+
+\begin_layout Section
+Défilement
+\end_layout
+
+\begin_layout Standard
+Dans un document PowerPoint, il y a deux barres de défilement : un pour
+ les diapositives et un pour l'aperçu des diapositives.
+ Les deux barres de défilement fonctionnent de même façon.
+ Si vous cliquez avec le curseur dans l'espace des diapositives, vous allez
+ pouvoir défiler dans cette espace en utilisant les touches en bas et en
+ haut.
+ Si par contre, vous cliquez dans l'aperçu, vous pouvez défiler dans l'aperçu
+ avec les touches.
+ La roulette du souris externe fonctionne de même.
+\end_layout
+
+\begin_layout Section
+Trieuse de diapositives
+\end_layout
+
+\begin_layout Standard
+Avant de présenter une présentation, il est bien de revoir l'ordre de nos
+ diapositives.
+ Est-ce que les idées sont claires ? Est-ce que je peux améliorer la suite
+ d'information en triant les diapositives ? Avec cette idée, vous pouvez
+ afficher la présentation en mode Trieuse afin de pouvoir réorganiser les
+ diapositives.
+\end_layout
+
+\begin_layout Standard
+Cliquez l'onglet 
+\emph on
+Affichage
+\emph default
+.
+ Le bouton 
+\emph on
+Trieuse de diapositives
+\emph default
+ se trouve à gauche.
+ Cliquez ce bouton.
+ Vous allez voir toutes vos diapositives en miniature.
+ Si vous cliquez une diapositive une fois elle sera selectionnée.
+ Une fois selectionnée, vous pouvez la déplacer, en cliquant en continu
+ avec le bouton gauche de souris.
+ Vous allez la déplacer entre d'autres diapositives.
+\end_layout
+
+\begin_layout Standard
+Mettez la diapositive 
+\begin_inset Quotes eld
+\end_inset
+
+Carte du Tchad
+\begin_inset Quotes erd
+\end_inset
+
+ juste après la diapositive du titre.
+ Comme ça il sera la deuxième diapositive dans la présentation.
+\end_layout
+
+\begin_layout Standard
+Pour revoir une diapositive vous pouvez soit la double-cliquez, soit cliquez
+ le bouton 
+\emph on
+Normal
+\emph default
+ qui se trouve dans l'onglet 
+\emph on
+Affichage
+\emph default
+ tout à gauche.
+\end_layout
+
+\begin_layout Section
+Faire un diaporama
+\end_layout
+
+\begin_layout Standard
+Maintenant que la présentation est bien organiser, on va apprendre à la
+ présenter.
+ On utilise le mot diaporama pour dire présenter une suite de diapositives.
+ Naturellement, c'est l'onglet 
+\emph on
+Diaporama
+\emph default
+ où nous allons trouvez toutes les options à ce fin.
+\end_layout
+
+\begin_layout Standard
+Dans l'onglet 
+\emph on
+Diaporama
+\emph default
+ les deux boutons à gauche nous seront utile.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="middle" width="60col%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "20col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename A-partir-de-debut.png
+	lyxscale 33
+	scale 33
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ce bouton va faire commencer la présentation depuis la première diapositive.
+ On peut également utiliser la touche 'F5'.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "20col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename A-partir-de-la-disposition-actuelle.png
+	lyxscale 33
+	scale 33
+	BoundingBox 0bp 0bp 529bp 365bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+En cliquant ce bouton, le diaporama commencera avec la diapositive qui est
+ selectionée.
+ C'est la diapositive où nous travaillons ou celui qui est selectionée.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Options pour diaporama
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Exercices
+\end_layout
+
+\begin_layout Standard
+Faites un diaporama de vos diapositives.
+ Utilisez les touches (en bas ou à droite pour avancer, en haut ou à gauche
+ pour revenir) de voir la suite de vos idées.
+ Presentez ce que vous avez fait à vos voisins.
+ Qu'est que vous améliorez ? Comment pouvez-vous mieux présenter l'information
+ sur le Tchad.
+ Si le temps permet, revenir à vos diapositives en ajoutant des textes,
+ images, formes ou autres.
+\end_layout
+
+\begin_layout Part
+Internet - introduction
+\end_layout
+
+\begin_layout Standard
+Cette partie donne une introduction sur les bases de l'internet, comprenant
+ la théorie mais aussi la pratique.
+ L'histoire de l'internet et les différents services qui s'y trouvent sont
+ démontrés et expliqué.
+\end_layout
+
+\begin_layout Standard
+Qu'est-ce l'internet? D'où est-ce que ça vient? Quelles sont les possibilités?
+ Dans cette section nous parlerons d'une vue globale sur internet: son histoire,
+ son fonctionnement et quelques possibilités d'application.
+\end_layout
+
+\begin_layout Quote
+Internet est le réseau informatique mondial qui rend accessible au public
+ des services comme le courrier électronique et le World Wide Web.
+ Ses utilisateurs sont désignés par le néologisme internaute.
+ Techniquement, Internet se définit comme le réseau public mondial utilisant
+ les protocoles de communication TCP/IP (Transfer Control Protocol/Internet
+ Protocol).
+ 
+\end_layout
+
+\begin_layout Quote
+[...]
+\end_layout
+
+\begin_layout Quote
+Internet a été conçu pour relier des réseaux informatiques hétéroclites
+ sur des distances intercontinentales : universitaires, d'entreprises, gouvernem
+entaux, nationaux, etc., qui peuvent eux-mêmes relier des sous-réseaux et
+ finalement des ordinateurs.
+ (Wikipedia, Internet)
+\end_layout
+
+\begin_layout Section
+Historique
+\end_layout
+
+\begin_layout Subsection
+Les origines
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Ce texte a été adapté de WikiPedia - l'encyclopédie multimédia on-line
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Les mémos que J.C.R.
+ Licklider du Massachusetts Institute of Technology (MIT) écrivit en août
+ 1962 sont les plus anciens textes décrivant les interactions sociales qui
+ seraient possibles avec un réseau d'ordinateurs.
+ Cela devait notamment faciliter les communications entre chercheurs du
+ Defense Advanced Research Projects Agency (DARPA).
+ En octobre 1962, Licklider fut le premier chef du programme de recherche
+ en informatique du DARPA.
+ Il convainquit ses successeurs Ivan Sutherland, Bob Taylor et le chercheur
+ du MIT Lawrence G.
+ Roberts de l'intérêt des réseaux informatiques.
+\end_layout
+
+\begin_layout Standard
+En août 1968, le DARPA accepta de financer le développement du matériel
+ de routage des paquets d'ARPANET.
+ Monsieur Robert E.
+ Kahn (Bob Kahn) travailla sur l'architecture du réseau.
+\end_layout
+
+\begin_layout Standard
+En septembre 1969, BBN installa le premier équipement à l'université de
+ Californie (UCLA) où travaillait Kleinrock.
+ Le second noeud du réseau fut installé au Stanford Research Institute (SRI)
+ où travaillait Doug Engelbart sur un projet d'hypertexte.
+ Deux noeuds supplémentaires furent ajoutés avec l'université de Santa Barbara
+ et l'université de l'Utah.
+ Fin 1969, ARPANET comptait donc quatre noeuds.
+\end_layout
+
+\begin_layout Standard
+En 1973, Kahn demanda à Vinton G.
+ Cerf (Vint Cerf) (parfois appelé père de l'Internet) de travailler avec
+ lui, car Cerf connaissait les détails de mise en oeuvre de NCP.
+ Le premier document faisant référence à TCP est écrit en 1973 par Cerf:
+ A Partial Specification of an International Transmission Protocol.
+ La première spécification formelle de TCP date de décembre 1974, c'est
+ le RFC 675.
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Il faut surtout retenir la date de 1969 avec la mise en œuvre du premier
+ réseau ARPANET avec quatre universités.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+L'utilisation académique
+\end_layout
+
+\begin_layout Standard
+Pendant presque deux décennies, l'internet a été utilisé uniquement dans
+ le monde académique et militaire.
+ Ceci était dû à plusieurs facteurs, les plus importants étant le peu d'ordinate
+urs disponibles
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Jusqu'à la fin des années 80, même en occidant c'était rare de trouver un
+ ordinateur dans une maison
+\end_layout
+
+\end_inset
+
+ et la complexité du système.
+ Durant ce temps, il y avait principalement quatre services:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+E-Mail pour transmettre des messages entre deux personnes
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+FTP pour transmettre des fichiers
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Telnet pour travailler à distance sur un autre ordinateur
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Usenet qui permettait de faire des forums de discussions
+\end_layout
+
+\begin_layout Standard
+Les utilisateurs de ces services ont dû apprendre beaucoup sur les ordinateurs
+ avant d'être capable d'utiliser ces services.
+ Rappelons que la souris n'est utilisé qu'à partir de 1985 et n'est utilisé
+ couramment qu'autour des années 90s.
+\end_layout
+
+\begin_layout Subsection
+Tout change avec le HTML
+\end_layout
+
+\begin_layout Standard
+La grande croissance de l'internet commence à partir de 1992 grâce à un
+ développement de Tim Berners-Lee du CERN à Genève, Suisse.
+ Il a travaillé sur une façon de relier des documents entre eux.
+ La grande nouveauté était les 
+\emph on
+liens
+\emph default
+ (links) qui formaient la base du 
+\emph on
+hypertext
+\emph default
+.
+ Il a appellé son logiciel WWW, 
+\emph on
+World Wide Web
+\emph default
+ (toile autour du monde) et le langage HTML, ce qui signifie 
+\emph on
+HyperText Markup Language
+\emph default
+ (langage de description hypertexte).
+ Ce langage dit comment on peut écrire un document pour qu'on puisse le
+ relier à d'autres documents.
+ Le WWW était né
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Internet est le réseau, le WWW ou le web est un service
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pour le monde académique, c'était déjà un grand pas en avant.
+ Les utilisateurs privés commencent à affluer avec l'ajout de la possibilité
+ d'introduire des images et d'utiliser des formulaires.
+ Tandis que les images permettent à rendre les pages beaucoup plus attractives,
+ les formulaires ouvrent la voie pour des commandes et une commercialisation
+ du web.
+\end_layout
+
+\begin_layout Section
+Fonctionnement
+\end_layout
+
+\begin_layout Subsection
+Général
+\end_layout
+
+\begin_layout Standard
+Internet est composé d'une multitude d'
+\emph on
+ordinateurs
+\emph default
+ qui sont reliés entre eux pour former des 
+\emph on
+réseaux
+\emph default
+.
+ La liaisons entre ordinateurs peut se faire de différentes manières: avec
+ des fils, des fibres optiques, ou sans fil.
+\end_layout
+
+\begin_layout Standard
+Chaque réseau est lui-même connecté à plusieurs autres réseaux.
+ Lorsqu'une communication doit s'établir entre deux ordinateurs appartenant
+ à des réseaux différents, il faut alors déterminer le chemin à effectuer
+ parmi ceux-là.
+\end_layout
+
+\begin_layout Standard
+Il est a noter qu'aucun élément d'internet ne connaît le réseau dans son
+ ensemble, les données sont simplement redirigées vers un autre noeud selon
+ des règles de 
+\emph on
+routage
+\emph default
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Ceci est un grand avantage au cas ou il y a un noeud qui ne marche plus:
+ les données passent simplement à travers un autre noeud, sans que tout
+ l'internet doive avoir connaissance de cette défaillance
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Grâce à cette interconnexion entre ordinateurs on peut offrir plusieurs
+ services aux utilisateurs.
+ Chaque service est offert par un 
+\emph on
+serveur
+\emph default
+ qui attend des demandes d'un 
+\emph on
+client
+\emph default
+ et qui va y répondre.
+ Cette communication suit des 
+\emph on
+protocoles
+\emph default
+ bien définis et sert à transmettre des données dans un 
+\emph on
+format
+\emph default
+ spécifique.
+\end_layout
+
+\begin_layout Standard
+Sur la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Une-vue-choisie"
+
+\end_inset
+
+ on voit une partie infime de l'internet et quelques connexions bien choisies.
+ Ainsi on peut voir que pour joindre Yahoo.com depuis le réseau Markas-Al-Nour,
+ on doit passer par plusieurs étapes: d'abord le réseau local, puis à travers
+ le téléphone mobile chez Tigo, empruntant un satellite jusqu'en Tanzanie
+ depuis où un câble fibre-optique transatlantique relaie les informations
+ jusqu'aux États-Unis et finalement chez Yahoo.com.
+ Cette grande flexibilité dans l'acheminement des 
+\emph on
+paquets
+\emph default
+ d'information fait de l'internet le réseau de choix pour la plupart des
+ applications informatiques qui ont besoin de plusieurs ordinateurs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename internet_reseaux.eps
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Une-vue-choisie"
+
+\end_inset
+
+Une vue choisie de l'internet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Utilité pour le travail
+\end_layout
+
+\begin_layout Standard
+L'internet a changé le monde du travail encore d'avantage que le courrier
+ classique ou même le téléphone.
+ Dans bien des domaines les possibilités offertes par ce nouveau médium
+ dépassent de loin tout ce qu'on a connu avant.
+ La vitesse des messages augmente, l'information disponible va en croissant
+ et les possibilités de rencontres pour des clients éventuels se multiplie.
+\end_layout
+
+\begin_layout Standard
+Pour chaque entreprise et chaque travail l'impact dû à internet va changer.
+ Voici les points les plus souvent rencontrés dans une entreprise:
+\end_layout
+
+\begin_layout Subsection
+Courriel
+\end_layout
+
+\begin_layout Standard
+Le grand classique dans l'internet permet de transmettre des documents et
+ de les discuter entre deux ou plusieurs personnes.
+ Il est ainsi possible d'avoir une réponse plus rapide que par courrier
+ postal mais avec l'avantage de pouvoir transmettre des documents, chose
+ qui n'est pas possible avec un appel téléphonique.
+\end_layout
+
+\begin_layout Standard
+Il ne faut néanmoins pas négliger le danger du courriel qui consiste à un
+ usage abusif: envoi de courriel de pub, de blagues, avertissement virus
+ ou demandent de pétitions.
+ Ces actions peuvent prendre une grande partie du temps de travail d'un
+ employé et ainsi réduire tout avantage de ce nouvel outil.
+\end_layout
+
+\begin_layout Subsection
+B2C
+\end_layout
+
+\begin_layout Standard
+B2C veut dire 
+\emph on
+business to client
+\emph default
+ - la relation entre entreprise et client.
+ De plus en plus d'entreprises possèdent une page web qui leur permet de
+ distribuer la pub et de l'information à un coût beaucoup inférieur comparé
+ aux téchniques classiques.
+ Grâce à une page web, une entreprise peut offrir par example:
+\end_layout
+
+\begin_layout Itemize
+Un catalogue de ses produits avec les prix et la possibilité de commander
+ directement via internet
+\end_layout
+
+\begin_layout Itemize
+De l'information après-vente pour l'entretien et la réparation de ses produits
+\end_layout
+
+\begin_layout Itemize
+Un site pour des offres d'emploi dans l'entreprise
+\end_layout
+
+\begin_layout Itemize
+Un plan d'accès et les numéros de téléphones et autres possibilités de contact
+\end_layout
+
+\begin_layout Standard
+Cette information peut être très utile pour la recherche d'un produit ou
+ pour une première évaluation du marché.
+\end_layout
+
+\begin_layout Subsection
+B2B
+\end_layout
+
+\begin_layout Standard
+Avec B2B, 
+\emph on
+business to business
+\emph default
+, on désigne le fait d'échanger des biens avec une autre entreprise.
+ Ceci peut être des outils pour la construction, des matériaux de base pour
+ la production de voitures, des aliments pour produire de la nourriture
+ ou tout autre chose.
+ Les avantages d'utiliser l'internet dans ces achats sont:
+\end_layout
+
+\begin_layout Itemize
+Une vue plus directe sur les prix de différents fournisseurs
+\end_layout
+
+\begin_layout Itemize
+Possibilité d'information sur d'autres fournisseurs
+\end_layout
+
+\begin_layout Itemize
+Rapidités de la commande et confirmation presque instantané
+\end_layout
+
+\begin_layout Itemize
+Suivi de la commande
+\end_layout
+
+\begin_layout Subsection
+Information pour l'entreprise
+\end_layout
+
+\begin_layout Standard
+Le monde du marché change de plus en plus vite, et il y a toujours de nouvelles
+ technologies qui entrent sur le marché.
+ Ceci n'est pas seulement valable pour tout ce qui touche à l'informatique,
+ mais pour tout marché qui évolue et se développe.
+ Cette information peut aller du pratique comme trouver une carte pour un
+ trajet à faire, ou la réservation pour un restaurant, mais aussi bien la
+ recherche de nouveaux matériaux de construction, de nouveaux modèles de
+ voitures ou les derniers résultats de la recherche nutritionnelle.
+\end_layout
+
+\begin_layout Section
+Utilité pour la récréation
+\end_layout
+
+\begin_layout Standard
+Là encore les possibilités sont immenses, et on peut trouver de tout sur
+ internet: des sites de rencontres, de discussion, de voyage, d'information
+ générale et particulière, ...
+\end_layout
+
+\begin_layout Subsection
+Mise en garde
+\end_layout
+
+\begin_layout Standard
+Un des grands avantages de l'internet est sa simplicité pour tout un chacun
+ de participer et de donner son avis.
+ Mais là-dedans se trouve aussi ses plus grands désavantages:
+\end_layout
+
+\begin_layout Itemize
+Chaque information doit être vérifiée
+\end_layout
+
+\begin_layout Itemize
+Il est très simple pour un imposteur de se faire passer pour n'importe-qui
+\end_layout
+
+\begin_layout Itemize
+Beaucoup d'informations qui ne font pas gloire à Dieu existent sur internet:
+ Pornographie, appel à la haine, violence
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Si vous tombez sur un site comme ça, il vous suffit de cliquer sur 
+\begin_inset Quotes eld
+\end_inset
+
+retour
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Alors que le premier point est déjà important dans la vie de tout les jours,
+ où nous ne devons jamais oublier que ce qu'on entend n'est pas forcément
+ la vérité, le deuxième point requiert très spécialement notre attention.
+ Dans les sections 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:spam-/-les"
+
+\end_inset
+
+ et 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Les-hoax"
+
+\end_inset
+
+ on trouve quelques indications concernant les e-mails.
+\end_layout
+
+\begin_layout Section
+La navigation
+\end_layout
+
+\begin_layout Standard
+Comme on a vu dans la partie précédente, c'est avec l'arrivée du format
+ HTML que l'internet a commencé à se répandre dans le monde entier.
+ Le fait d'utiliser ce langage s'appelle communément 
+\emph on
+surfer
+\emph default
+ ou 
+\emph on
+naviguer
+\emph default
+.
+ Il s'agit du vocabulaire emprunté à la navigation sur mer, probablement
+ pour les raison suivantes:
+\end_layout
+
+\begin_layout Itemize
+L'internet est en constante évolution, de même que la mer change toujours
+\end_layout
+
+\begin_layout Itemize
+Le chemin pour arriver à bon port peut changer d'une fois à l'autre
+\end_layout
+
+\begin_layout Itemize
+On peut découvrir des choses qu'on ne connaissait pas avant
+\end_layout
+
+\begin_layout Subsection
+La navigation
+\end_layout
+
+\begin_layout Standard
+Si vous ouvrez le navigateur Firefox, vous avez les fonctionnalités qui
+ sont décrites dans la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Régions-de-Firefox"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="block" valignment="top" width="15text%">
+<column alignment="block" valignment="top" width="30text%">
+<column alignment="block" valignment="top" width="10text%">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menu
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Navigation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+barre URL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recherche
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marque-Pages
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "60col%"
+special "none"
+height "1pt"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size huge
+PAGE WEB
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Régions-de-Firefox"
+
+\end_inset
+
+Régions de Firefox
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour la navigation, les régions les plus importantes sont la 
+\emph on
+navigation
+\emph default
+ et la partie 
+\emph on
+barre URL
+\emph default
+, ainsi que la partie 
+\emph on
+Page Web
+\emph default
+.
+ Si on entre une adresse
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Une adresse sur le web est appellé URL (Unique Resource Location)
+\end_layout
+
+\end_inset
+
+ dans la 
+\emph on
+barre URL
+\emph default
+ correspondant et qu'on confirme avec 
+\emph on
+<ENTRÉE>
+\emph default
+, le navigateur va afficher l'adresse désirée
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Ceci dépend bien sûr de divers facteurs comme: l'exactitude de l'adresse,
+ la connexion internet et la bonne configuration de l'ordinateur.
+\end_layout
+
+\end_inset
+
+.
+ Commencez avec l'adresse suivante:
+\end_layout
+
+\begin_layout LyX-Code
+http://profeda.wifi
+\end_layout
+
+\begin_layout Standard
+Vous voyez la page web qui s'affiche sur l'écran avec le texte.
+ Ce qui fait la merveille du web, ce sont les 
+\emph on
+liens
+\emph default
+.
+ Ceux-ci peuvent se montrer sous divers aspects:
+\end_layout
+
+\begin_layout Itemize
+Un ou plusieurs mots soulignés
+\end_layout
+
+\begin_layout Itemize
+Un ou plusieurs mots dans une autre couleur
+\end_layout
+
+\begin_layout Itemize
+Une image
+\end_layout
+
+\begin_layout Standard
+De toute façon, si on déplace la flèche au-dessus d'un lien, l'aspect de
+ la flèche change dans celui d'une main.
+ Ceci veut dire qu'on peut suivre le lien qui se trouve en-dessous de la
+ main.
+\end_layout
+
+\begin_layout Standard
+Chaque fois qu'on suit un lien, on voit la nouvelle adresse s'afficher dans
+ la 
+\emph on
+barre URL
+\emph default
+ du navigateur
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Il y a certaines exceptions à cette règle, mais normalement on peut se fier
+ à ça
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Revenir en arrière et avancer
+\end_layout
+
+\begin_layout Standard
+Parfois on n'est pas sûr du lien qu'on veut suivre, on aimerait bien explorer
+ et essayer diverses alternatives.
+ Pour ceci existe le bouton tout à droite du panneau de la navigation, désigné
+ par une flèche à gauche.
+ En appuyant sur cette flèche, le navigateur va afficher la page précédente.
+ De manière analogue, il y a une flèche qui pointe vers la droite, qui peut
+ nous mener en avant.
+ Bien sûr que ceci n'est que possible une fois qu'on est allé en arrière...
+\end_layout
+
+\begin_layout Subsubsection
+Recharger la page
+\end_layout
+
+\begin_layout Standard
+Le symbole pour recharger la page est désigné par deux flèches qui forment
+ un cercle.
+ Ce bouton est nécessaire parce que le navigateur ne remet pas à jour automatiqu
+ement toutes les pages affichées.
+ Si vous avez donc une page de nouvelles ouverte depuis une heure, vous
+ pouvez juste cliquer sur le symbole 
+\emph on
+recharger
+\emph default
+ et vous voyez la dernière page de nouvelles sur votre écran.
+\end_layout
+
+\begin_layout Standard
+Ce bouton sera aussi très important pour le développement des pages webs,
+ parce que là aussi on voudrait toujours voir le dernier développement de
+ sa propre page.
+\end_layout
+
+\begin_layout Subsubsection
+Arrêt
+\end_layout
+
+\begin_layout Standard
+Ce bouton est désigné par un cercle rouge avec une croix en biais dedans.
+ Il est utilisé pour arrêter le chargement d'une page qui prend beaucoup
+ de temps.
+\end_layout
+
+\begin_layout Subsubsection
+Page d'accueil
+\end_layout
+
+\begin_layout Standard
+En cliquant sur le bouton désigné avec une maison, on peut revenir sur la
+ page d'accueil comme définie dans la configuration.
+ Cette page est la page principale qui s'affiche au chargement du navigateur
+ et elle peut être choisi librement.
+\end_layout
+
+\begin_layout Section
+Quelques sites locaux / distant
+\end_layout
+
+\begin_layout Standard
+Vu que la connexion internet n'est pas disponible et qu'il est des fois
+ difficile de donner une connexion pour toute la classe, nous avons mis
+ à disposition à l'aide de notre équipement quelques sites qui n'ont pas
+ besoin d'une connexion internet, et qui sont donc beaucoup plus rapide
+ pour la consultation.
+\end_layout
+
+\begin_layout Subsection
+Sites locaux
+\end_layout
+
+\begin_layout Standard
+Ces sites sont stoqués directement sur notre équipement, et c'est donc beaucoup
+ plus rapide que de passer par internet.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Profeda.org site principale de l'organisation qui s'occupe de l'équipement
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+wikipedia.profeda.org site avec des informations sur beaucoup de sujets, en
+ français
+\end_layout
+
+\begin_layout Subsection
+Sites distants
+\end_layout
+
+\begin_layout Standard
+Contrairement aux sites locaux, ces sites-ci ont besoin d'une connexion
+ internet et sont donc pour la plupart beaucoup plus lents que les sites
+ locaux.
+ Pourtant vous pouvez accéder à ces sites dans tout les cyber-cafés.
+ Ici un petit choix des sites que nous pensons être bons:
+\end_layout
+
+\begin_layout Subsubsection
+Recherche et informations
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+google.fr Le site de recherche connu par tout le monde
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+fr.wikipedia.org Le site orignale de l'encyclopédie en ligne
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ar.wikipedia.org L'encyclopédie en Arabe
+\end_layout
+
+\begin_layout Subsubsection
+Nouvelles
+\end_layout
+
+\begin_layout Standard
+Il faut noter que les sites de nouvelles donnent toujours qu'une partie
+ de l'information.
+ Il est donc préférable de consulter plusieurs sites, pour avoir une bonne
+ idée des choses qui se passent.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+rfi.fr Le site de nouvelles qui va avec la radio
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+bbcafrique.com La BBC avec les nouvelles pour l'Afrique
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+aljazeera.com Les nouvelles selon AlJazeera
+\end_layout
+
+\begin_layout Subsubsection
+Sites du gouvernement Tchadien
+\end_layout
+
+\begin_layout Subsubsection
+Divertissement
+\end_layout
+
+\begin_layout Part
+Internet - recherche
+\end_layout
+
+\begin_layout Standard
+Quand on parle d'internet aujourd'hui, on fait surtout référence au World
+ Wide Web, la toile mondiale, qui présente les informations en utilisant
+ des 
+\emph on
+liens
+\emph default
+.
+ Cette application a été inventé en 1992 par Tim Berners-Lee, et depuis
+ son invention a été utilisé et multiplié par beaucoup.
+ Le nombre exacte de 
+\emph on
+sites web
+\emph default
+ n'est pas connu, et c'est même devenu difficile de savoir comment il faut
+ compter, vu que certains sites sont tellement étendu (facebook, flickr
+ et autres) qu'on devrait les compter non par 1, mais par plusieurs.
+\end_layout
+
+\begin_layout Standard
+Si on compte le nombre de pages web, on trouve de nos jours plusieurs milliards
+ de pages web avec tout plein d'informations dans tout les sens.
+ Il est donc devenu important de savoir se retrouver dans toutes ces pages,
+ afin de retrouver l'information qui nous intéresse.
+ Plusieurs sites web s'offrent pour nous aider dans cette recherche, la
+ plus connue étant pour le moment google.
+\end_layout
+
+\begin_layout Section
+Utilisation Google
+\end_layout
+
+\begin_layout Standard
+Pour se rendre sur google, il suffit d'entrer 
+\emph on
+google.fr
+\emph default
+ dans la barre URL de votre navigateur.
+ Une fois la page chargée, vous pouvez commencer à lancer des 
+\emph on
+requêtes
+\emph default
+ sur la page.
+\end_layout
+
+\begin_layout Subsection
+Fonctionnement de la recherche
+\end_layout
+
+\begin_layout Standard
+Pour lancer une 
+\emph on
+requête
+\emph default
+ sur Google, il faut entrer ce qu'on appelle des 
+\emph on
+mots clés
+\emph default
+ dans la partie de recherche.
+ Google connaît beaucoup de pages web qu'il met à jour contsamment et qu'il
+ peut faire des recherches dedans.
+ La seule chose que Google sait de votre recherche sont les mots clés que
+ vous lui donnez.
+ Il ne connaît pas vos préférences, ni votre langue maternelle, ni votre
+ famille.
+ Il est donc important de choisir des bons mots clés, afin que Google puisse
+ trouver des résultats qui correspondent à votre recherche.
+\end_layout
+
+\begin_layout Standard
+Une fois que vous appuyez sur 
+\emph on
+recherche
+\emph default
+, Google va vous présenter des 
+\emph on
+résultats
+\emph default
+, comme dans la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Recherche-Google-avec"
+
+\end_inset
+
+.
+ Remarquez les éléments suivants:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Recherche-Google-avec"
+
+\end_inset
+
+Recherche Google avec résultats
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Recherche Ici vous mettez les mots clés nécessaires
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Publicité Ces liens sont payés par des entreprises pour apparaître dans
+ votre recherche
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Résultats Voici ce que Google pense être important concernant vos mots clés
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Extrait Une partie du texte de la page retrouvée, ceci peut vous aider à
+ décider si la page est utile ou pas
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Suivants Pour retrouver les résultats suivants, toujours 10 par 10
+\end_layout
+
+\begin_layout Subsection
+Mots clés
+\end_layout
+
+\begin_layout Standard
+Il est très important de trouver des mots clés qui sont bons.
+ Si vous prenez des mots clés trop généraux, vous allez avoir beaucoup de
+ résultats qui ne sont pas utils.
+ Avec des mots clés trop spécifiques, vous pouvez passer à côté des pages
+ qui pourraient aussi être important.
+ Il faut donc bien apprendre à choisir les mots clés.
+\end_layout
+
+\begin_layout Subsubsection
+Trop général
+\end_layout
+
+\begin_layout Standard
+Si vous voulez trouver le résultat du dernier census au Tchad, vous pouvez
+ par exemple essayer par la recherche
+\end_layout
+
+\begin_layout LyX-Code
+dernier census
+\end_layout
+
+\begin_layout Standard
+et lancer la recherche.
+ Google va alors vous afficher beaucoup de résultats, mais qui ne sont pas
+ ce que vous recherchez!
+\end_layout
+
+\begin_layout Subsubsection
+Trop spécifique
+\end_layout
+
+\begin_layout Standard
+Alors vous essayez d'ajouter quelques mos clés, afin de mieux cibler la
+ recherche:
+\end_layout
+
+\begin_layout LyX-Code
+dernier census tchad 2010 N'Djaména Moussoro Sarh Abéché
+\end_layout
+
+\begin_layout Standard
+Et là vous n'allez plus avoir des résultats utils, parce qu'il n'existe
+ pas de page sur internet qui parle de tout ces mots clés en même temps.
+\end_layout
+
+\begin_layout Subsubsection
+Le bon choix
+\end_layout
+
+\begin_layout Standard
+Voici un exemple qui peut vous donner les résultat du census 2010 fait au
+ Tchad
+\end_layout
+
+\begin_layout LyX-Code
+census tchad 2010 résultats
+\end_layout
+
+\begin_layout Standard
+En regardant les premiers résultats, vous pouvez choisir la page qui vous
+ intéresse.
+\end_layout
+
+\begin_layout Subsection
+La diversité
+\end_layout
+
+\begin_layout Standard
+Sur des sujets compliqués, il est des fois utile de prendre plusieurs résultats
+ et de lire les pages concernées.
+ Ceci peut vous aider à vous faire une idée plus complête du sujet.
+ Si vous faites par exemple une recherche sur
+\end_layout
+
+\begin_layout LyX-Code
+politique francaise
+\end_layout
+
+\begin_layout Standard
+vous allez trouver beaucoup d'informations sur tout ce qui touche à leur
+ politique.
+ Vous allez trouver le pour et le contre, des gens qui sont content et des
+ gens qui sont mécontants.
+ Ce sujet est tellement vaste, qu'il n'y a probablement personne qui peut
+ le connaître en entier.
+\end_layout
+
+\begin_layout Section
+Wikipedia
+\end_layout
+
+\begin_layout Standard
+Tandis que Google recherche dans tous les sites web disponibles sur internet,
+ Wikipedia est un système fermé qui contient une encyclopédie 
+\emph on
+collaboratif
+\emph default
+.
+ 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Collaboratif veut dire que plusieurs personnes travaillent à l'élaboration
+ des pages.
+ Malgré l'anarchie possible, il est intéressent de voir comment cette approche
+ collaboratif a donné l'encyclopédie la plus complète disponible librement.
+\end_layout
+
+\end_inset
+
+ Si vous recherchez un sujet bien précis, il est des fois plus simple de
+ chercher directement sur Wikipedia, au lieu de passer par Google.
+\end_layout
+
+\begin_layout Subsection
+Lancer une recherche
+\end_layout
+
+\begin_layout Standard
+Si vous voulez visiter Wikipedia, il vous suffit d'entrer l'adresse suivant
+ dans la barre URL de votre navigateur:
+\end_layout
+
+\begin_layout LyX-Code
+fr.wikipedia.org
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Si la connexion internet ne le permet pas, vous pouvez aussi essayer wikipedia.pr
+ofeda.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vous allez être présenté avec la page d'accueil de Wikipedia, qui contient
+ aussi plusieurs exemples d'articles du jour.
+ A gauche il y a un champ de recherche qui vous permet de directement trouver
+ une page dans Wikipedia.
+ Entrez une fois la recherche suivante:
+\end_layout
+
+\begin_layout LyX-Code
+Tchad
+\end_layout
+
+\begin_layout Standard
+Dans la page de résultats, vous trouvez au début un lien sur la page qui
+ contient des informations sur le pays de Tumaï.
+\end_layout
+
+\begin_layout Subsection
+Ajout d'informations
+\end_layout
+
+\begin_layout Standard
+En regardant bien, vous trouverez des liens nommés 
+\emph on
+modifier
+\emph default
+ à côté de chaque partie de l'article.
+ Ceci est la partie 
+\emph on
+collaboratif
+\emph default
+ de Wikipedia, qui permet à tout et à chacun de changer le contenu du site!
+\end_layout
+
+\begin_layout Section
+Discussion sur les résultats
+\end_layout
+
+\begin_layout Standard
+Idée: faire quelques recherches et discuter sur les résultats survenus.
+\end_layout
+
+\begin_layout Part
+Internet - courriel
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Comme on l'a déjà vu dans l'introduction, l'e-mail est une des applications
+ la plus vieille de l'internet.
+ Techniquement parlant, peu a changé depuis ces derniers trente années.
+ Un courrier est toujours un texte électronique qui part d'un ordinateur
+ et qui arrive vers un autre.
+ Ce texte peut contenir des images, du son et des documents, dont la taille
+ varie.
+ L'adresse est toujours du format nom@site.tld où le nom peut être choisi
+ librement
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Il ne doit pas contenir plus de 32 caractères et seulement être composé
+ de l'alphabet anglais plus les chiffres 0-9 et quelques signes spéciaux:
+ -_.
+\end_layout
+
+\end_inset
+
+ et la partie à droite de l'arobase (le signe @) désigne l'entité
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Ceci peut être intnet.td, yahoo.fr, yahoo.com, hotmail.com, markas-al-nour.org,
+ novotel.com, ...
+\end_layout
+
+\end_inset
+
+ à qui l'adresse appartient.
+\end_layout
+
+\begin_layout Standard
+Avec l'avancement d'internet le nombre d'adresses e-mails s'est multiplié
+ et aujourd'hui il y a probablement plus d'un milliard de personnes qui
+ peuvent recevoir et envoyer des messages électroniques et qui le font d'une
+ façon régulière.
+\end_layout
+
+\begin_layout Standard
+Depuis quelques années on voit aussi le désavantage de ce nouveau médium.
+ Avec la facilité de joindre des milliers de personnes en même temps il
+ y a un grand nombre d'abus qui se sont installés.
+ Les e-mails indésirés sont communément désignés comme SPAM
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Ce mot est utilisé pour de la viande de porc hachée et enboîtée.
+\end_layout
+
+\end_inset
+
+ et de nos jours c'est impensable d'avoir une boîte e-mail sans une protection
+ contre ce genre de courriel.
+\end_layout
+
+\begin_layout Subsection
+Les récepteur A, CC et CCi
+\end_layout
+
+\begin_layout Standard
+Pour envoyer un e-mail, il existe plusieurs possibilités pour les destinaires.
+ Quand on utilise le yahoo, d'abord on ne voit que la partie 
+\emph on
+A
+\emph default
+ pour mettre un destinaire direct du mail.
+ Cette solution se prête très bien si on n'a qu'un ou deux destinaires.
+\end_layout
+
+\begin_layout Standard
+Si on veut par contre envoyer son mail à plusieurs personnes, il faut refléchir
+ à les envoyer différemment.
+ On a deux choix:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CC Copie Carbon
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CCi Copie Carbon invisible
+\end_layout
+
+\begin_layout Standard
+Chaque destinaire du message peut voir les personnes mises dans le champ
+ 
+\emph on
+CC
+\emph default
+, mais pas ceux mis dans le champ 
+\emph on
+CCi
+\emph default
+.
+ Si par example on envoie un email avec les deux champs remplis comme suivant:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+A Professeur
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CC Directeur
+\end_layout
+
+\begin_layout Standard
+alors le professeur va recevoir le mail et voir que le directeur a aussi
+ reçu le mail.
+ En règle générale, on dit que le destinaire dans la partie 
+\emph on
+A
+\emph default
+ est celui de qui on veut une réponse, tandis que le destinaire dans la
+ partie 
+\emph on
+CC
+\emph default
+ est seulement informé du mail.
+\end_layout
+
+\begin_layout Standard
+Si on veut envoyer un email à beaucoup de personnes, il est mieux d'utiliser
+ le CCi.
+ Les champs sont alors remplis comme suit:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+A Moi-même
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CCi Mahammat, Séidé, Youssouf, Umar, Zara
+\end_layout
+
+\begin_layout Standard
+Maintenant tous les destinaires (Mahamat, Séidé, Youssouf, Umar et Zara)
+ ne voient que la partie 
+\emph on
+A
+\emph default
+, mais ils ne peuvent pas voir tous les destinaires.
+ Ceci est très pratique quand on envoie un message à beaucoup de personnes,
+ par exemple pour des lettres de nouvelles ou de la publicité.
+ Il est d'habitude de mettre son propre nom dans la partie 
+\emph on
+A
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+En résumé, on peut définir les trois champs comme suit:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+A Destinaire principal de qui on s'attend à une réponse
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CC Personne éventuellement intéressée, mais pas nécessairement pour une
+ réponse
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CCi Pour des listes de diffusion, lettres de nouvelles ou pub
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:spam-/-les"
+
+\end_inset
+
+SPAM / les non-désirables
+\end_layout
+
+\begin_layout Standard
+Une grande partie des e-mails qui sont envoyés sur l'internet sont des e-mails
+ dits SPAM ou non-désirable.
+ Il s'agit de la publicité pour un produit ou un service pas forcément désiré.
+ Généralement, on peut dire qu'un tel e-mail est:
+\end_layout
+
+\begin_layout Itemize
+Pas personnel - ce n'est pas une personne qui vous écrit à vous personnellement,
+ mais une personne qui écrit à des milliers de personnes
+\end_layout
+
+\begin_layout Itemize
+Pas sérieux - les services offerts (souvent payants) sont mensongers
+\end_layout
+
+\begin_layout Itemize
+Pas désiré - vous n'avez pas demandé cette information
+\end_layout
+
+\begin_layout Standard
+Il est donc facile de dire que le mieux à faire avec les e-mails spam, c'est
+ de les effacer! Les spams les plus souvent rencontrés sont:
+\end_layout
+
+\begin_layout Itemize
+Offres érotiques de tout genre
+\end_layout
+
+\begin_layout Itemize
+Invitation à retirer un gain (pour un jeu où vous n'avez jamais participé)
+\end_layout
+
+\begin_layout Itemize
+Une offre pour beaucoup d'argent (d'une personne que vous ne connaissez
+ pas)
+\end_layout
+
+\begin_layout Standard
+En général on peut dire que si vous vous imaginez quelqu'un dans la rue
+ vous faire un tel propos, et que vous pensez 
+\begin_inset Quotes eld
+\end_inset
+
+il doit être fou
+\begin_inset Quotes erd
+\end_inset
+
+, vous pouvez en déduire la même chose pour cet e-mail.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Les-hoax"
+
+\end_inset
+
+Les hoax
+\end_layout
+
+\begin_layout Standard
+Une autre catégorie d'e-mails, les hoax, sont moins dangereux, mais quand
+ même embêtant.
+ Ce sont des messages tout à fait inventés avec comme seul but d'être re-envoyé.
+ Si vous voulez vérifier la véracité d'un message, vous pouvez toujours
+ aller regarder sur
+\end_layout
+
+\begin_layout LyX-Code
+http://www.hoaxbuster.com
+\end_layout
+
+\begin_layout Standard
+et vérifier si le message que vous avez reçu y est répertorié ou pas.
+ Si tel est le cas, il n'est pas trop tard pour la mettre à la poubelle.
+\end_layout
+
+\begin_layout Section
+Inscription Yahoo / Gmail
+\end_layout
+
+\begin_layout Standard
+L'inscription auprès de Yahoo ou de Gmail (qui fait partie de Google) est
+ gratuite, mis à part les coûts de connexion nécessaire.
+ Pour commencer l'inscription, veuillez suivre les instructions disponibles
+ sous
+\end_layout
+
+\begin_layout LyX-Code
+http://mail.yahoo.fr
+\end_layout
+
+\begin_layout Standard
+ou alors
+\end_layout
+
+\begin_layout LyX-Code
+http://mail.google.com
+\end_layout
+
+\begin_layout Standard
+Il faut entrer cette adresse dans la 
+\emph on
+barre URL
+\emph default
+ et confirmer par la touche entrée.
+ Une fois que vous êtes inscrits, n'oubliez pas de notre votre adresse et
+ votre mot de passe, afin de ne pas les oublier!
+\end_layout
+
+\begin_layout Subsection
+Captchas
+\end_layout
+
+\begin_layout Standard
+Pendant l'inscription, un des champs à remplir est utilisé pour s'assurer
+ que vous n'êtes pas un ordinateur en train de faire une inscription automatique
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Pour les fournisseurs de courriel, il est important de n'avoir que des comptes
+ rééls, afin d'éviter la distribution de SPAM
+\end_layout
+
+\end_inset
+
+.
+ La meilleure façon à ce jour de s'assurer qu'il y a un être humain qui
+ est en train de s'inscrire pour l'e-mail, est la présentation d'une image
+ qui contient des lettres et des chiffres, et qu'il faut entrer dans un
+ champs.
+\end_layout
+
+\begin_layout Subsection
+Vérification par téléphone
+\end_layout
+
+\begin_layout Standard
+Gmail va encore un pas plus loin pour s'assurer que votre courriel est vrai.
+ Il est nécessaire d'indiquer un numéro de téléphone, sur lequel un ordinateur
+ de Gmail va appeler, et indiquer une séquence de numéros à entrer dans
+ un champ! De cette manière, Gmail peut être assez sûr d'avoir un être humain
+ à l'autre bout du fil.
+\end_layout
+
+\begin_layout Standard
+Malheureusement Gmail n'offre pas le système SMS au Tchad, seulement 
+\emph on
+Appel téléphonique
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Questions secrètes
+\end_layout
+
+\begin_layout Standard
+Yahoo utilise un moyen supplémentaire pour pouvoir retrouver votre compte
+ en cas de perte du mot de passe.
+ Ce système travaille avec des 
+\emph on
+questions secrètes
+\emph default
+, auxquelles seulement vous connaissez la réponse.
+ Le jour où vous avez perdu votre mot de passe, vous pourriez vous présenter
+ au système en indicant les questions secrètes et surtout les réponses.
+\end_layout
+
+\begin_layout Subsection
+Versions de l'interface
+\end_layout
+
+\begin_layout Standard
+Une fois le compte inscrit, vous êtes présenté avec une interface dans le
+ navigateur, où vous pouvez travailler sur votre boîte courriel.
+ Et Yahoo et Gmail vous proposent une interface simplifée qui se charge
+ plus rapidement que l'interface complète.
+ Pour les connexions disponibles ici au Tchad, il est toujours préférable
+ d'utiliser la version simplifiée de l'interface.
+ Chez Yahoo la version simplifiée s'appelle 
+\emph on
+version de base
+\emph default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Interface local
+\end_layout
+
+\begin_layout Standard
+Dans les cours qui sont équipés d'un serveur DreamPlug, il est également
+ possible de se rendre sur l'adresse
+\end_layout
+
+\begin_layout LyX-Code
+http://profeda.wifi/squirrelmail
+\end_layout
+
+\begin_layout Standard
+et de se connecter avec son nom et mot de passe gmail.
+ Avec beaucoup d'utilisateurs en même temps, il se peut que cette interface
+ soit plus rapide que l'interface simplifié de Gmail.
+\end_layout
+
+\begin_layout Subsection
+Utilisation régulière
+\end_layout
+
+\begin_layout Standard
+Si vous n'utilisez pas régulièrement votre adresse e-mail, votre compte
+ va être bloqué, et il vous sera probablement difficile de le rouvrir.
+ Le mieux est de relever son courrier au moins une fois par semaine, et
+ pourquoi pas prendre quelques adresses de la famille qui sont dans la ville,
+ et leur écrire de temps à autre des vos nouvelles? Ainsi vous restez connectés
+ et vous vous entrainez à l'utilisation de ce médium fantastique qu'est
+ le courriel.
+\end_layout
+
+\begin_layout Section
+Envoyer et recevoir des messages
+\end_layout
+
+\begin_layout Standard
+Afin de travailler avec votre courriel, il faut se connecter sous 
+\emph on
+mail.google.com
+\emph default
+ ou 
+\emph on
+mail.yahoo.fr
+\emph default
+ et entrer le nom et le mot de passe.
+ Une fois connecté, vous pouvez envoyer et recevoir les messages.
+\end_layout
+
+\begin_layout Subsection
+Envoyer
+\end_layout
+
+\begin_layout Standard
+Pour pouvoir envoyer des messages de courriel, il est tout d'abord nécessaire
+ de connaître l'adresse courriel de votre correspondant.
+ Si vous n'avez pas d'adresse correcte, vous ne pouvez pas entrer en contact
+ avec lui.
+ Un seul lettre ou chiffre faux peut faire que le message ne va pas s'envoyer
+ à la personne que vous croyez.
+\end_layout
+
+\begin_layout Standard
+Pour commencer à écrire un courriel, vous pouvez cliquer sur 
+\emph on
+écrire un message
+\emph default
+ qui se trouve pour Yahoo et Gmail en haut à gauche.
+\end_layout
+
+\begin_layout Standard
+Il y a trois champs à remplir:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+à
+\begin_inset space ~
+\end_inset
+
+(destination) le récepteur de votre message.
+ Il faut entrer l'adresse complet avec le @ et le fournisseur
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+sujet pour aider à retrouver ce message plus tard
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+contenu le text lui-même que vous désirez envoyer au récepteur du message
+\end_layout
+
+\begin_layout Standard
+Une fois que votre message est terminé, vous pouvez appuyer sur 
+\emph on
+envoyer
+\emph default
+ et attendre que vous recevez la confirmation.
+\end_layout
+
+\begin_layout Subsection
+Recevoir des messages
+\end_layout
+
+\begin_layout Standard
+Chaque fois que vous vous connectez sur 
+\emph on
+mail.google.com
+\emph default
+ ou 
+\emph on
+mail.yahoo.fr
+\emph default
+, vous voyez tout d'abord une présentation des 20 derniers messages reçus
+ avec chaque fois l'expéditeur, le sujet et la date.
+ Si vous désirez lire le message complet, il suffit de cliquer sur la ligne
+ qui contient le message désiré.
+\end_layout
+
+\begin_layout Standard
+Si vous voulez actualiser les messages reçus, il suffit de cliquer sur 
+\emph on
+boîte de réception
+\emph default
+ et attendre que la liste se rafraîchit.
+\end_layout
+
+\begin_layout Part
+Préparation présentations
+\end_layout
+
+\begin_layout Standard
+Afin de pouvoir s'exercer avec PowerPoint et l'internet on vous demande
+ de préparer une présentation sur un sujet que vous choissisiez.
+ Voici les étapes que vous allez faire :
+\end_layout
+
+\begin_layout Enumerate
+Choisir un sujet
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Avis : choisir un sujet qui vous intéresse, un sujet que vous voulez comprendre.
+ Ne choissisez pas un sujet trop vaste (histoire de l'Afrique), mais plutôt
+ un sujet qui pourra être traiter dans une présentation d'environ 10 minutes.
+\end_layout
+
+\begin_layout Enumerate
+Exemples : histoire du kanem, moyens d'améliorer sa récolte de mil, types
+ de construction de maison au tchad, reparation d'un moto, coupe du monde
+ 2014 ; ou bien choissisez un écrivain, un chanteur ou un politicien sur
+ qui vous aimerez savoir plus.
+ Enfin les sujets sont sans nombre, et le choix c'est à vous !
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Préparer une esquisse que vous devéloppera au mésure de vos recherches
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Exemple 1
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Sujet : le lac tchad d'aujourd'hui et demain
+\end_layout
+
+\begin_layout Enumerate
+Introduction
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Où est lac tchad
+\end_layout
+
+\begin_layout Enumerate
+Statistiques sur la superficie
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Le lac tchad aujourd'hui
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Utilisation
+\end_layout
+
+\begin_layout Enumerate
+Problèmes du à la sécheresse
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Perspectives sur l'avenir
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Réponses des pays concernés
+\end_layout
+
+\begin_layout Enumerate
+Possibilités pour une utilisation durable
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Exemple 2
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Sujet : Jacob Zuma, président de l'afrique du sud
+\end_layout
+
+\begin_layout Enumerate
+Introduction
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Son education
+\end_layout
+
+\begin_layout Enumerate
+Premiers travails
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Election comme président
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ses succés
+\end_layout
+
+\begin_layout Enumerate
+Ses défis
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Perspectives sur son avenir politique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Projets pour l'afrique du sud
+\end_layout
+
+\begin_layout Enumerate
+Projets pour l'afrique tout entier
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Créer des diapositives pour chaque élément de votre esquisse, mettant l'élément
+ en titre
+\end_layout
+
+\begin_layout Enumerate
+Devélopper les diapositives à partir des recherches sur Google et Wikipedia
+\end_layout
+
+\begin_layout Standard
+Votre professeur vous indiquera combien de temps vous auriez pour préparer
+ vos présentations.
+ Normalement la présentation d'une diapositive prendra une minute, donc
+ ajuster le nombre de diapositives en fonction du temps qui vous sera mis
+ à disposition.
+\end_layout
+
+\begin_layout Part
+Techniques de présentation
+\end_layout
+
+\end_body
+\end_document
