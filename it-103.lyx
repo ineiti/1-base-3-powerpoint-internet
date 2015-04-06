@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass extarticle
@@ -9,19 +9,26 @@
 \rhead{}
 \lhead{}
 \rfoot{}
-\setlength{\marginparwidth}{3cm}
-\def\mparsetup{%
-    \slshape\footnotesize%
-    \parindent=0pt \lineskip=0pt \lineskiplimit=0pt %
-    \tolerance=2000 \hyphenpenalty=300 \exhyphenpenalty=300%
-    \doublehyphendemerits=100000%
-    \finalhyphendemerits=\doublehyphendemerits}
 
-\let\oldmarginpar\marginpar
+%\setlength{\intextsep}{0cm plus1cm minus1cm}
 
-\renewcommand{\marginpar}[1]{\oldmarginpar[\mparsetup\raggedleft{\hspace{0pt}{#1}}]{\mparsetup\raggedright{\hspace{0pt}{#1}}}}
+\setlength{\wrapoverhang}{1cm}
+%\setlength{\wrapoverhang}{\marginparwidth}
+%\addtolength{\wrapoverhang}{\marginparsep}
+
+\makeatletter
+\renewcommand{\fnum@figure}{}
+\renewcommand{\fnum@table}{}
+\makeatother 
+
+\usepackage{caption}
+\captionsetup{
+  font=small}
 \end_preamble
 \use_default_options true
+\begin_modules
+info
+\end_modules
 \maintain_unincluded_children false
 \language french
 \language_package default
@@ -30,13 +37,13 @@
 \font_roman lmodern
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -48,29 +55,38 @@
 \use_hyperref false
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
-\suppress_date true
+\suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
+\leftmargin 2cm
 \topmargin 3cm
-\rightmargin 6cm
+\rightmargin 3cm
 \bottommargin 3cm
 \secnumdepth 3
 \tocdepth 0
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
@@ -87,6 +103,16 @@
 \begin_inset External
 	template PDFPages
 	filename page_de_garde.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename /Users/ineiti/Documents/Work/ProFeDA/Cours/1-Base/page_interieur.pdf
 
 \end_inset
 
@@ -116,7 +142,7 @@ status open
 \backslash
 chead{
 \backslash
-copyright 2012 profeda.org}
+copyright 2014 profeda.org}
 \end_layout
 
 \begin_layout Plain Layout
@@ -155,7 +181,7 @@ ur.
 Cette troisième partie a pour but de vous introduire au logiciel Microsoft
  PowerPoint ainsi qu'à l'internet.
  Vous allez apprendre l'historique de l'informatique, le fonctionnement
- d'un logiciel de navigation et les bases de conaissances de comment fonctionne
+ d'un logiciel de navigation et les bases de connaissances de comment fonctionne
  le courriel.
  Tout au long vous serez guidés par des exemples.
 \end_layout
@@ -215,8 +241,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
-<features tabularvalignment="top">
-<column alignment="left" valignment="top" width="0">
+<features rotate="0" tabularvalignment="top">
+<column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="0pt">
 <row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
@@ -262,16 +288,19 @@ status open
 position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "8cm"
+width "11cm"
 special "none"
 height "1in"
 height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
 Service Au Sahel Tchad (SAS) 
 \begin_inset Newline newline
 \end_inset
@@ -284,19 +313,26 @@ Centre de formation et de culture Markas-al-Nour
 \begin_inset Newline newline
 \end_inset
 
-Ecobank Tchad: 60001 00024 37193951501-86 
-\begin_inset Newline newline
-\end_inset
-
 Tel: +235 63 20 90 18
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Plain Layout
+Samuel Schoofs - premières utilisations, retouches et idées
+\end_layout
+
+\begin_layout LyX-Code
 http://markas-al-nour.org 
 \begin_inset Newline newline
 \end_inset
 
 info@markas-al-nour.org
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset VSpace medskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -351,16 +387,19 @@ status open
 position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "8cm"
+width "10cm"
 special "none"
 height "1in"
 height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
 ProFeDA
 \begin_inset Newline newline
 \end_inset
@@ -374,14 +413,21 @@ Tel:
 \end_inset
 
 +235 62 15 43 52
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout LyX-Code
 http://profeda.org
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout LyX-Code
 info@profeda.org
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset VSpace medskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -407,24 +453,38 @@ info@profeda.org
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "8cm"
+width "11cm"
 special "none"
 height "1in"
 height_special "totalheight"
 status open
 
-\begin_layout Itemize
-Samuel Schoofs - premières utilisations, retouches et idées
+\begin_layout LyX-Code
+\begin_inset VSpace medskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Viviane Gasser - correction orthographe
+\end_layout
+
+\begin_layout Itemize
+Simon Neuhaus - idées et corrections
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset VSpace medskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -443,10 +503,10 @@ Viviane Gasser - correction orthographe
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Auteurs et initiataires de ce document
+Auteurs et initiatrices de ce document
 \end_layout
 
 \end_inset
@@ -482,7 +542,7 @@ PowerPoint - l'interface
 \end_layout
 
 \begin_layout Standard
-PowerPoint est un logiciel de présentation devéloppé par Microsoft.
+PowerPoint est un logiciel de présentation développé par Microsoft.
  Il fait partie de la suite Microsoft Office, qui inclut aussi les logiciels
  Word et Excel avec lesquels vous avez déjà travaillé.
  PowerPoint est conçu pour présenter de l'information, que ça soit sous
@@ -490,6 +550,21 @@ PowerPoint est un logiciel de présentation devéloppé par Microsoft.
  Souvent les présentations sont faites avec l'aide d'un projecteur qui permet
  au présentateur de parler aux auditeurs pendant qu'ils regardent l'information
  de sa présentation.
+ Comme le Microsoft Word, PowerPoint vous présente d'abord une fenêtre avec
+ la possibilité d'ouvrir d'anciennes présentations, avant de vous laisser
+ travailler:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Images_13/PowerPoint_startup.PNG
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -499,11 +574,11 @@ Diapositives
 \begin_layout Standard
 Les présentations sont sous forme de plusieurs pages, appelés diapositives
  ou 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 slides
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 .
@@ -525,11 +600,11 @@ Une diapositive de titre est typiquement mise avant tout ; elle contient
 zones de textes
 \emph default
  où vous pouvez ajouter un titre là où il est dit 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 Cliquez pour ajouter un titre
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 .
@@ -537,7 +612,7 @@ Cliquez pour ajouter un titre
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
+placement bh
 wide false
 sideways false
 status open
@@ -563,7 +638,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -615,6 +690,33 @@ Quand vous démarrez le logiciel PowerPoint, il vous présente une nouvelle
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Pour démarrer PowerPoint, appuyez la touche Windows + S, puis entrez 
+\emph on
+powerpoint
+\emph default
+ et sélectionnez le programme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
+
+\begin_layout Plain Layout
+Windows 7/XP: cliquez démarrer - Tous les programmes - Microsoft Office
+ - Microsoft PowerPoint 2013
+\end_layout
+
+\end_inset
+
 Notez les noms des Onglets : 
 \emph on
 Accueil, Insertion, Création, Animations, Diaporama, Révision 
@@ -642,7 +744,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Affichage.png
+	filename Images_13/PowerPoint_accueil-annote.png
 	lyxscale 25
 	width 90text%
 
@@ -652,7 +754,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -707,48 +809,36 @@ Votre première présentation
 \end_layout
 
 \begin_layout Standard
-Démarrez PowerPoint.
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Cliquez démarrer – Tous les programmes – Microsoft Office – Microsoft PowerPoint
- 2007
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Une nouvelle présentation sera déjà sur l'écran avec une diapositive de
  titre.
  Cliquez la zone de texte qui dit 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
-Cliquez pour ajouter un tire
-\begin_inset Quotes erd
+Cliquez pour ajouter un titre
+\begin_inset Quotes frd
 \end_inset
 
 .
  Ce texte disparaîtra, et le curseur vous indiquera que vous pouvez tapez
  le titre dedans.
  Tapez 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 Découverte de Tchad
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
  et dans le deuxième zone de texte (le sous-titre), tapez vos noms.
 \end_layout
 
 \begin_layout Standard
-Insérez une nouvelle diapositive à partir du bouton du même nom
-\begin_inset Marginal
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "3cm"
 status open
 
 \begin_layout Plain Layout
@@ -762,19 +852,35 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nouvelle diapositive
+\end_layout
+
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Insérez une nouvelle diapositive à partir du bouton du même nom.
  Vous allez voir que le bouton a deux parties : en cliquant la grande partie
  en haut vous aurez une diapositive avec contenu.
  En cliquant la partie en bas, vous aurez des options pour plusieurs modèles
  de diapositives.
- Maintenant, cliquez la grande partie ou selectionnez 
-\begin_inset Quotes eld
+ Maintenant, cliquez la grande partie ou sélectionnez 
+\begin_inset Quotes fld
 \end_inset
 
 Titre et contenu
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 .
@@ -782,11 +888,11 @@ Titre et contenu
 
 \begin_layout Standard
 Sur cette nouvelle diapositive, mettez en titre, 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 Villes du Tchad
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 .
@@ -815,11 +921,11 @@ Abéché
 \begin_layout Standard
 Insérez une nouvelle diapositive.
  Mettez en titre 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 Animaux vivant au Tchad
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 .
@@ -829,23 +935,17 @@ Animaux vivant au Tchad
 \begin_layout Standard
 Enregistrez la présentation.
  Comme d'habitude, on a le choix de sauvegarder depuis le bouton Microsoft
- Office
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-On peut aussi utiliser les touches (Ctrl + S)
-\end_layout
-
+ Office ou avec le bouton de sauvegarde (il se trouve en haut juste à droite
+ du bouton Microsoft Office).
+ Choisissez un nom qui convient comme 
+\begin_inset Quotes fld
 \end_inset
 
-ou avec le bouton de sauvegarde (il se trouve en haut juste à droite du
- bouton Microsoft Office).
- Choissisez un nom qui convient comme 
-\begin_inset Quotes eld
+Découverte du Tchad
+\begin_inset Quotes frd
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -855,14 +955,113 @@ Si le temps vous le permet, changez les tailles et couleurs des mots dans
  des diapositives.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
+
+\begin_layout Plain Layout
+Pour sauvegarder, on peut aussi utiliser les touches (Ctrl + S)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Listes numérotées
+\end_layout
+
+\begin_layout Standard
+Ajoutez une diapositive avec une liste numérotée 
+\begin_inset Quotes fld
+\end_inset
+
+Industries au Tchad
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Coton
+\end_layout
+
+\begin_layout Enumerate
+Pétrole
+\end_layout
+
+\begin_layout Enumerate
+Sucre
+\end_layout
+
+\begin_layout Enumerate
+Gomme arabique
+\end_layout
+
+\begin_layout Enumerate
+Ful
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Ajoutez une diapositive au choix:
+\end_layout
+
+\begin_layout Itemize
+Ethnies au Tchad
+\end_layout
+
+\begin_layout Itemize
+Fleuves au Tchad
+\end_layout
+
+\begin_layout Itemize
+Régions au Tchad
+\end_layout
+
+\begin_layout Itemize
+Ressources naturelles
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Insertion d'une diapositive
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 PowerPoint - Thèmes
 \end_layout
 
 \begin_layout Standard
 Puisque PowerPoint est conçu pour aider la présentation de plusieurs types
- d'information, il est important de savoir comment bénéficier de ses fonctionali
-tés graphiques.
+ d'information, il est important de savoir comment bénéficier de ses fonctionnal
+ités graphiques.
 \end_layout
 
 \begin_layout Section
@@ -870,7 +1069,7 @@ Thèmes
 \end_layout
 
 \begin_layout Standard
-Microsoft PowerPoint mis à disposition plusieurs thèmes prédefinis, ou modèles,
+Microsoft PowerPoint mis à disposition plusieurs thèmes prédéfinis, ou modèles,
  qui permettent à l'utilisateur de changer le style de chaque élément de
  la présentation : police, couleurs, arrière-plan, mise en page du titre,
  etc.
@@ -896,7 +1095,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Tous-les-thèmes.png
+	filename Images_13/PowerPoint_themes.png
 	lyxscale 25
 	width 90text%
 
@@ -906,7 +1105,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -935,7 +1134,7 @@ Ouvrir le fichier qui a été enregistré dans la leçon précédente.
 Création
 \emph default
  et puis la flèche en bas des thèmes.
- Selectionnez un de ces thèmes prédefinis et regardez comment la présentation
+ Sélectionnez un de ces thèmes prédéfinis et regardez comment la présentation
  change.
 \end_layout
 
@@ -957,21 +1156,29 @@ Tableaux
 \end_layout
 
 \begin_layout Standard
-Le bouton 
-\emph on
-Tableau
-\emph default
- fonctionne comme on l'a vu avec Word.
- Nous pouvons insérer un tableau en sélectionnant le nombre de colonnes
- et de lignes que nous avons besoin.
- Une fois inséré, on peut ajouter des colonnes ou lignes, ou bien supprimer.
-\begin_inset Marginal
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "3cm"
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Images/bouton_tableau.png
-	width 3cm
+	width 2cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Insérer un tableau
+\end_layout
 
 \end_inset
 
@@ -984,12 +1191,26 @@ status open
 \end_layout
 
 \begin_layout Standard
+Le bouton 
+\emph on
+Tableau
+\emph default
+ fonctionne comme on l'a vu avec Word.
+ Nous pouvons insérer un tableau en sélectionnant le nombre de colonnes
+ et de lignes dont nous avons besoin.
+ Une fois inséré, on peut ajouter des colonnes ou lignes, ou bien supprimer
+ celles qui ne sont plus d'actualité.
+ Comme avec Word, la première ligne est souvent utilisée pour donner un
+ titre aux colonnes.
+\end_layout
+
+\begin_layout Standard
 Insérez une nouvelle diapositive, et mettez en titre 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 Fêtes et jours fériés au Tchad
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 
@@ -1009,10 +1230,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<lyxtabular version="3" rows="11" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1214,26 +1435,6 @@ Hégire (nouvel an)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6 mai
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Le labétien
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1261,7 +1462,7 @@ Lundi de Pâques
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -1288,6 +1489,43 @@ Images
 \end_layout
 
 \begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "3cm"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Tchad_carte.gif
+	lyxscale 33
+	width 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Le Tchad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Comme dans Word, on peut insérer des images dans notre fichier.
  Sous l'onglet 
 \emph on
@@ -1298,17 +1536,17 @@ Insertion
 \end_layout
 
 \begin_layout Standard
-Dans vos présentations, insérez une nouvelle diapositive et donnez le titre
- 
-\begin_inset Quotes eld
+Dans vos présentations, insérez une nouvelle diapositive et donnez-lui le
+ titre 
+\begin_inset Quotes fld
 \end_inset
 
 Carte du Tchad
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 .
- Insérer une image de la carte du Tchad.
+ Insérez une image de la carte du Tchad.
 \begin_inset Note Note
 status open
 
@@ -1322,18 +1560,60 @@ Need to put this image on a thumb drive to be shared across all the computers!
 \end_layout
 
 \begin_layout Standard
-\begin_inset Marginal
+Si vous avez un appareil photo, vous pouvez aussi insérer des images de
+ celui-ci.
+ Plus tard on verra comment prendre des images sur internet, pour les insérer
+ dans une présentation.
+\end_layout
+
+\begin_layout Subsubsection
+Enregistrer depuis une page web
+\end_layout
+
+\begin_layout Standard
+Si vous avez la possibilité de trouver une connexion internet, ou alors
+ si vous pouvez travailler sur les pages locales dans un centre Profeda,
+ il est possible d'enregistrer les images des pages webs sur votre ordinateur.
+\end_layout
+
+\begin_layout Standard
+Pour enregistrer une image, il suffit de cliquer dessus avec le bouton 
+\emph on
+droit
+\emph default
+ de la souris et de choisir 
+\emph on
+Enregistrer l'image sous
+\emph default
+.
+ Dans la fenêtre qui s'ouvre, on peut alors choisir le répertoire où on
+ veut copier l'image dedans.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Tchad_carte.gif
-	lyxscale 33
-	width 3cm
+Naviguez sur un site interne, cherchez une image dans le Wikipedia, enregistrez-
+la et utilisez-la pour une diapositive
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Utiliser une image depuis internet
+\end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1353,15 +1633,15 @@ Les formes avec PowerPoint sont utiles pour illustrer une idée ou pour connecte
 
 \begin_layout Standard
 Depuis la carte du Tchad que vous avez mise, insérez une flèche indiquant
- là où vous êtes né(e).
- Vous allez d'abord cliquer le bouton 
+ le lieu où vous êtes né(e).
+ Vous allez d'abord cliquer sur le bouton 
 \emph on
 Formes
 \emph default
-, puis vous cliquerez la petite image d'une flèche, puis vous allez cliquez
- sur la diapositive : une fois indiquant où vous voulez mettre le pied de
- la flèche et (toujours appuyant sur le bouton gauche de la souris) et une
- deuxième fois où vous voulez la tête de la flèche.
+, puis vous cliquerez sur la petite image d'une flèche, puis vous allez
+ cliquez sur la diapositive : une fois en indiquant où vous voulez mettre
+ le pied de la flèche et (toujours appuyant sur le bouton gauche de la souris)
+ et une deuxième fois où vous voulez la tête de la flèche.
  Essayez plusieurs fois si besoin.
 \end_layout
 
@@ -1370,17 +1650,29 @@ Zones de texte
 \end_layout
 
 \begin_layout Standard
-Parfois nos idées ne correspondent pas avec des listes à puces ou paragraphes
- bien linéaires.
- Pour faciliter la mise en page de vos idées, vous pouvez insérer des zones
- de texte, en ajoutant la phrase qui correspond à l'endroit.
-\begin_inset Marginal
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "1.5cm"
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Images/bouton_zone_de_texte.png
-	width 3cm
+	width 1.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -1393,14 +1685,21 @@ status open
 \end_layout
 
 \begin_layout Standard
-Insérez une zone de texte en cliquant la bouton 
+Parfois nos idées ne correspondent pas avec des listes à puces ou paragraphes
+ bien linéaires.
+ Pour faciliter la mise en page de vos idées, vous pouvez insérer des zones
+ de texte, en ajoutant la phrase qui correspond à l'endroit.
+\end_layout
+
+\begin_layout Standard
+Insérez une zone de texte en cliquant sur le bouton 
 \emph on
 Zone de texte
 \emph default
 .
  Comme pour l'insertion des formes, vous allez indiquer là où vous voulez
  l'insérer.
- Cliquez une fois pour un des quatre coins de la zone de texte eventuelle,
+ Cliquez une fois pour un des quatre coins de la zone de texte éventuelle,
  et toujours en appuyant sur le bouton de la souris, indiquez où se trouvera
  le coin diagonal.
 \end_layout
@@ -1419,9 +1718,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Carte-avec-flèche-et-ville.png
+	filename Images/Carte-avec-fleche-et-ville.png
 	lyxscale 33
-	scale 50
+	height 30theight%
 
 \end_inset
 
@@ -1429,7 +1728,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 La carte du Tchad avec une flèche et le nom d'une ville
@@ -1454,25 +1753,29 @@ WordArt
 \end_layout
 
 \begin_layout Standard
-L'insertion d'un champ WordArt (art de la parole en français) vous permet
- de communiquer un texte avec un style particulier.
- Vous aurez l'option de changer le remplissage de forme, le contour de forme
- et les effets sur la forme.
- Cliquez le bouton 
-\emph on
-WordArt
-\emph default
- et puis insérez le champ de texte tout comme vous aviez fait avec les zones
- de texte.
- Quand vous tapez un mot ou une phrase, un nouveau onglet apparaîtra en
- vous donnant des possibilités de tout changer.
-\begin_inset Marginal
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "2cm"
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Images/bouton_wordart.png
-	width 3cm
+	width 1.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+WordArt
+\end_layout
 
 \end_inset
 
@@ -1485,7 +1788,22 @@ status open
 \end_layout
 
 \begin_layout Standard
-Choissisez vous-mêmes un mot ou une phrase que vous voulez ajouter à une
+L'insertion d'un champ WordArt (art de la parole en français) vous permet
+ de communiquer un texte avec un style particulier.
+ Vous aurez l'option de changer le remplissage de forme, le contour de forme
+ et les effets sur la forme.
+ Cliquez le bouton 
+\emph on
+WordArt
+\emph default
+ et puis insérez le champ de texte tout comme vous aviez fait avec les zones
+ de texte.
+ Quand vous tapez un mot ou une phrase, un nouveau onglet apparaîtra en
+ vous donnant des possibilités de tout changer.
+\end_layout
+
+\begin_layout Standard
+Choisissez vous-mêmes un mot ou une phrase que vous voulez ajouter à une
  des diapositives déjà élaborée.
 \end_layout
 
@@ -1513,7 +1831,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Numéro-de-diapositive.png
+	filename Images/Numero-de-diapositive.png
 	lyxscale 33
 	width 100text%
 
@@ -1523,7 +1841,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Numéro de diapositive
@@ -1562,6 +1880,45 @@ N'oubliez pas de sauvegarder votre présentation d'aujourd'hui car nous allons
 PowerPoint - Trier et présenter
 \end_layout
 
+\begin_layout Standard
+Pour rappel des formes, faites l'exercice suivant.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/powerpoint_figures.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Formes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Défilement
 \end_layout
@@ -1582,13 +1939,11 @@ Trieuse de diapositives
 \end_layout
 
 \begin_layout Standard
-Avant de présenter une présentation, il est bien de revoir l'ordre de nos
- diapositives.
- Est-ce que les idées sont claires ? Est-ce que je peux améliorer la suite
- d'information en triant les diapositives ? Avec cette idée, vous pouvez
- afficher la présentation en mode Trieuse afin de pouvoir réorganiser les
- diapositives.
-\begin_inset Marginal
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "3cm"
 status open
 
 \begin_layout Plain Layout
@@ -1601,9 +1956,26 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Trieuse de diapositives
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+Avant de présenter une présentation, il est bien de revoir l'ordre de nos
+ diapositives.
+ Est-ce que les idées sont claires ? Est-ce que je peux améliorer la suite
+ d'information en triant les diapositives ? Avec cette idée, vous pouvez
+ afficher la présentation en mode Trieuse afin de pouvoir réorganiser les
+ diapositives.
 \end_layout
 
 \begin_layout Standard
@@ -1619,43 +1991,23 @@ Trieuse de diapositives
  se trouve à gauche.
  Cliquez ce bouton.
  Vous allez voir toutes vos diapositives en miniature.
- Si vous cliquez une diapositive une fois elle sera selectionnée.
- Une fois selectionnée, vous pouvez la déplacer, en cliquant en continu
+ Si vous cliquez une diapositive une fois elle sera sélectionnée.
+ Une fois sélectionnée, vous pouvez la déplacer, en cliquant en continu
  avec le bouton gauche de souris.
  Vous allez la déplacer entre d'autres diapositives.
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Vous pouvez aussi effacer les diapos ou les dupliquer
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 Mettez la diapositive 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 Carte du Tchad
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
  juste après la diapositive du titre.
  Comme ça elle sera la deuxième diapositive dans la présentation.
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Essayez le bouton droit sur un diapositive pour voir toutes les possibilités
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1671,11 +2023,75 @@ Affichage
  tout à gauche.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Vous pouvez aussi effacer les diapos ou les dupliquer.
+ Essayez le bouton droit sur un diapositive pour voir toutes les possibilités.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Faire un diaporama
 \end_layout
 
 \begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "3cm"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/A-partir-de-debut.png
+	lyxscale 20
+	width 2cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/A-partir-de-la-disposition-actuelle.png
+	lyxscale 20
+	width 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lancer un diaporama
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 Maintenant que la présentation est bien organisée, on va apprendre à la
  présenter.
  On utilise le mot diaporama pour dire présentation d'une suite de diapositives.
@@ -1691,7 +2107,7 @@ Dans l'onglet
 \emph on
 Diaporama
 \emph default
- les deux boutons à gauche nous seront utile:
+ les deux boutons à gauche nous seront utiles:
 \end_layout
 
 \begin_layout Description
@@ -1710,24 +2126,6 @@ du
 début Ce bouton va faire commencer la présentation depuis la première diapositiv
 e.
  On peut également utiliser la touche 'F5'.
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Images/A-partir-de-debut.png
-	lyxscale 20
-	width 3cm
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Description
@@ -1752,25 +2150,8 @@ diapositive
 \end_inset
 
 actuelle En cliquant ce bouton, le diaporama commencera avec la diapositive
- qui est selectionée.
- C'est la diapositive où nous travaillons ou celui qui est selectionée.
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Images/A-partir-de-la-disposition-actuelle.png
-	lyxscale 30
-	width 3cm
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ qui est sélectionnée.
+ C'est la diapositive où nous travaillons ou celui qui est sélectionnée.
 \end_layout
 
 \begin_layout Standard
@@ -1778,6 +2159,13 @@ status open
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 Faites un diaporama de vos diapositives.
@@ -1790,7 +2178,7 @@ Faites un diaporama de vos diapositives.
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Entraînement pour PowerPoint
@@ -1811,21 +2199,34 @@ Internet - introduction
 \end_layout
 
 \begin_layout Standard
-Cette leçon donne une introduction à l'internet, comprenant la théorie mais
- aussi la pratique.
- L'histoire de l'internet et les différents services qui s'y trouvent sont
- démontrés et expliqué.
-\begin_inset Marginal
+\begin_inset Wrap figure
+lines 5
+placement O
+overhang 0in
+width "2cm"
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Images/internet_contrast.jpg
 	lyxscale 20
-	width 3cm
+	width 2cm
 
 \end_inset
 
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1835,13 +2236,21 @@ status open
 \end_layout
 
 \begin_layout Standard
-Qu'est-ce 
+Cette leçon donne une introduction à l'internet, comprenant la théorie mais
+ aussi la pratique.
+ L'histoire de l'internet et les différents services qui s'y trouvent sont
+ démontrés et expliqué.
+\end_layout
+
+\begin_layout Standard
+Qu'est-ce que
 \emph on
-que 
+ 
 \emph default
 l'internet? D'où vient-il? Quelles en sont les possibilités? Dans cette
  section nous parlerons d'une vue globale sur internet: son histoire, son
  fonctionnement et quelques possibilités d'application.
+ Voici une définition de l'internet, tiré depuis Wikipédia:
 \end_layout
 
 \begin_layout Quote
@@ -1866,31 +2275,15 @@ Les origines
 \end_layout
 
 \begin_layout Standard
+Voici un texte qui a été adapté de WikiPedia - l'encyclopédie multimédia
+ on-line:
+\end_layout
+
+\begin_layout Standard
 Les mémos que J.C.R.
  Licklider du Massachusetts Institute of Technology (MIT) écrivit en août
  1962 sont les plus anciens textes décrivant les interactions sociales qui
  seraient possibles avec un réseau d'ordinateurs.
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Ce texte a été adapté de WikiPedia - l'encyclopédie multimédia on-line
-\end_layout
-
-\end_inset
-
-
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Il faut surtout retenir la date de 1969 avec la mise en œuvre du premier
- réseau ARPANET entre quatre universités des États-Unis.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1898,6 +2291,8 @@ En août 1968, le DARPA (Defense Advanced Research Projects Agency) accepta
  de financer le développement du matériel de routage des paquets d'ARPANET.
  Monsieur Robert E.
  Kahn (Bob Kahn) travailla sur l'architecture du réseau.
+ Il faut surtout retenir la date de 1969 avec la mise en œuvre du premier
+ réseau ARPANET entre quatre universités des États-Unis.
 \end_layout
 
 \begin_layout Standard
@@ -1913,18 +2308,7 @@ L'utilisation académique
 Pendant presque deux décennies, l'internet a été utilisé uniquement dans
  le monde académique et militaire.
  Ceci était dû à plusieurs facteurs, les plus importants étant le peu d'ordinate
-urs disponibles
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Jusqu'à la fin des années 80, même en occident c'était rare de trouver un
- ordinateur dans une maison
-\end_layout
-
-\end_inset
-
- et la complexité du système.
+urs disponibles et la complexité du système.
  Durant ce temps, il y avait principalement quatre services:
 \end_layout
 
@@ -1955,6 +2339,20 @@ Les utilisateurs de ces services ont dû apprendre beaucoup sur les ordinateurs
  couramment qu'autour des années 90s.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Jusqu'à la fin des années 80, même en occident c'était rare de trouver un
+ ordinateur dans une maison.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Tout change avec le HTML
 \end_layout
@@ -1971,7 +2369,7 @@ liens
 hypertext
 \emph default
 .
- Il a appellé son logiciel WWW, 
+ Il a appelé son logiciel WWW, 
 \emph on
 World Wide Web
 \emph default
@@ -1979,17 +2377,7 @@ World Wide Web
 \emph on
 HyperText Markup Language
 \emph default
- (langage de description hypertexte).
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Internet est le réseau, le WWW ou le web est un service
-\end_layout
-
-\end_inset
-
-.
+ (langage de description hypertexte)..
 \end_layout
 
 \begin_layout Standard
@@ -1998,6 +2386,19 @@ Les utilisateurs privés commencent à affluer avec l'ajout de la possibilité
  Tandis que les images permettent à rendre les pages beaucoup plus attractives,
  les formulaires ouvrent la voie pour des commandes et une commercialisation
  du web.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Internet est le réseau, le WWW ou le web est un service.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2018,15 +2419,18 @@ ordinateurs
 réseaux
 \emph default
 .
- La liaisons entre ordinateurs peut se faire de différentes manières: avec
- des fils, des fibres optiques, ou sans fil.
-\begin_inset Marginal
+ La liaison entre les ordinateurs peut se faire de différentes manières:
+ avec des fils, des fibres optiques, ou sans fil.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
 status open
 
 \begin_layout Plain Layout
-Ceci est un grand avantage au cas ou il y a un noeud qui ne marche plus:
+Ceci est un grand avantage au cas où il y a un noeud qui ne marche plus:
  les données passent simplement à travers un autre noeud, sans que tout
- l'internet doive avoir connaissance de cette défaillance
+ l'internet doive avoir connaissance de cette défaillance.
 \end_layout
 
 \end_inset
@@ -2092,7 +2496,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -2142,8 +2546,19 @@ Le courrier électronique permet de transmettre des documents et de les discuter
  Il est ainsi possible d'avoir une réponse plus rapide que par courrier
  postal mais avec l'avantage de pouvoir transmettre des documents, ce qui
  n'est pas possible avec un appel téléphonique.
-\begin_inset Marginal
-status open
+\end_layout
+
+\begin_layout Standard
+Il ne faut néanmoins pas négliger le danger du courriel qui consiste à un
+ usage abusif: envoi de courriel de pub, de blagues, avertissement virus
+ ou demandes de pétitions.
+ Ces actions peuvent prendre une grande partie du temps de travail d'un
+ employé et ainsi réduire tout avantage de ce nouvel outil.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
 
 \begin_layout Plain Layout
 Avec les smartphones, le courriel arrive même directement sur les téléphones
@@ -2155,16 +2570,8 @@ Avec les smartphones, le courriel arrive même directement sur les téléphones
 
 \end_layout
 
-\begin_layout Standard
-Il ne faut néanmoins pas négliger le danger du courriel qui consiste à un
- usage abusif: envoi de courriel de pub, de blagues, avertissement virus
- ou demandes de pétitions.
- Ces actions peuvent prendre une grande partie du temps de travail d'un
- employé et ainsi réduire tout avantage de ce nouvel outil.
-\end_layout
-
 \begin_layout Subsection
-B2C
+B2C et B2B
 \end_layout
 
 \begin_layout Standard
@@ -2176,33 +2583,8 @@ business to client
  De plus en plus d'entreprises possèdent une page web qui leur permet de
  distribuer la pub et de l'information à un coût très inférieur comparé
  aux techniques classiques.
- Grâce à une page web, une entreprise peut offrir par exemple:
-\end_layout
-
-\begin_layout Itemize
-Un catalogue de ses produits avec les prix et la possibilité de commander
- directement via internet
-\end_layout
-
-\begin_layout Itemize
-De l'information après-vente pour l'entretien et la réparation de ses produits
-\end_layout
-
-\begin_layout Itemize
-Un site pour des offres d'emploi dans l'entreprise
-\end_layout
-
-\begin_layout Itemize
-Un plan d'accès et les numéros de téléphones et autres possibilités de contact
-\end_layout
-
-\begin_layout Standard
-Cette information peut être très utile pour la recherche d'un produit ou
- pour une première évaluation du marché.
-\end_layout
-
-\begin_layout Subsection
-B2B
+ Mais on peut surtout vendre des produits et offrir des services après-ventes
+ beaucoup moins chers qu'avec une ligne téléphonique.
 \end_layout
 
 \begin_layout Standard
@@ -2214,34 +2596,21 @@ business to business
  Ceci peut être des outils pour la construction, des matériaux de base pour
  la production de voitures, des aliments pour produire de la nourriture
  ou autre.
- Les avantages d'utiliser l'internet dans ces achats sont:
-\begin_inset Marginal
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
 status open
 
 \begin_layout Plain Layout
-C'est surtout intéressant pour les très grandes entreprises parce qu'ils
- peuvent diminuer le temps nécessaire pour trouver des fournisseurs
+Le B2B est surtout intéressant pour les très grandes entreprises parce qu'elles
+ peuvent gagner du temps dans la recherche de fournisseurs.
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-Une vue plus directe sur les prix de différents fournisseurs
-\end_layout
-
-\begin_layout Itemize
-Possibilité d'information sur d'autres fournisseurs
-\end_layout
-
-\begin_layout Itemize
-Rapidité de la commande et confirmation presque instantanée
-\end_layout
-
-\begin_layout Itemize
-Suivi de la commande
 \end_layout
 
 \begin_layout Subsection
@@ -2280,34 +2649,32 @@ Un des grands avantages de l'internet est sa simplicité pour tout un chacun
 \end_layout
 
 \begin_layout Itemize
-Chaque information doit être vérifiée
+Chaque information doit être vérifiée, et il est très simple pour un imposteur
+ de se faire passer pour n'importe-qui
 \end_layout
 
 \begin_layout Itemize
-Il est très simple pour un imposteur de se faire passer pour n'importe-qui
+Sur certains sites comme Facebook, il est trop facile de passer beaucoup
+ de temps et de publier trop d'informations personnelles qui sont après
+ visibles pour tout le monde
 \end_layout
 
 \begin_layout Itemize
 Beaucoup d'informations qui ne font pas gloire à Dieu existent sur internet:
  Pornographie, appel à la haine, violence
-\begin_inset Marginal
-status open
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
 
 \begin_layout Plain Layout
-Si vous tombez sur un site comme ça, il vous suffit de cliquer sur 
-\begin_inset Quotes eld
-\end_inset
-
-retour
-\begin_inset Quotes erd
-\end_inset
-
-
+Si vous tombez sur un mauvais site, il vous suffit de cliquer sur retour.
 \end_layout
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -2336,8 +2703,8 @@ La navigation
 \end_layout
 
 \begin_layout Standard
-Comme on a vu dans la leçon précédente, c'est avec l'arrivée du format HTML
- que l'internet a commencé à se répandre dans le monde entier.
+Avec l'arrivée du format HTML l'internet a commencé à se répandre dans le
+ monde entier.
  Le fait d'utiliser ce langage s'appelle communément 
 \emph on
 surfer
@@ -2348,11 +2715,14 @@ naviguer
 \emph default
 .
  Il s'agit du vocabulaire emprunté à la navigation sur mer.
-\begin_inset Marginal
-status open
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
 
 \begin_layout Plain Layout
-On peut découvrir des choses qu'on ne connaissait pas avant
+On peut découvrir des choses qu'on ne connaissait pas avant.
 \end_layout
 
 \end_inset
@@ -2365,26 +2735,11 @@ Le navigateur Firefox
 \end_layout
 
 \begin_layout Standard
-Si
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Le navigateur 
-\size normal
-\emph on
-Chrome
-\emph default
- a unis la barre URL et la barre de recherche
-\end_layout
-
-\end_inset
-
- vous ouvrez le navigateur Firefox, vous avez les fonctionnalités qui sont
- décrites dans la figure 
+Si vous ouvrez le navigateur Firefox, vous voyez une fenêtre qui ressemble
+ à la figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Régions-de-Firefox"
+reference "fig:navigateur_firefox"
 
 \end_inset
 
@@ -2392,173 +2747,33 @@ reference "cap:Régions-de-Firefox"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-placement h
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Le navigateur Chrome a joint la barre URL et la barre de recherche
+\size normal
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="block" valignment="top" width="20text%">
-<column alignment="block" valignment="top" width="40text%">
-<column alignment="block" valignment="top" width="20text%">
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Menu
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Navigation
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-barre URL
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Recherche
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Marque-Pages
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "c"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "60col%"
-special "none"
-height "1pt"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-
-\size huge
-PAGE WEB
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+\noindent
+\begin_inset Graphics
+	filename Images/Firefox.png
+	lyxscale 50
+	width 100text%
 
 \end_inset
 
@@ -2566,16 +2781,24 @@ PAGE WEB
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:navigateur_firefox"
+
+\end_inset
+
+: 
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Régions-de-Firefox"
+name "fig:navigateur_firefox"
 
 \end_inset
 
-Régions de Firefox
+Le navigateur Firefox
 \end_layout
 
 \end_inset
@@ -2589,15 +2812,6 @@ Régions de Firefox
 \end_layout
 
 \begin_layout Standard
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-Une adresse sur le web est appellée URL (Unique Resource Location)
-\end_layout
-
-\end_inset
-
 Pour la navigation, les régions les plus importantes sont la 
 \emph on
 navigation
@@ -2624,7 +2838,20 @@ barre URL
 \end_layout
 
 \begin_layout LyX-Code
-http://profeda.wifi
+http://local.profeda.org
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Une adresse sur le web est appelée URL (Unique Resource Location)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2635,17 +2862,6 @@ liens
 \emph default
 .
  Ceux-ci peuvent se montrer sous divers aspects:
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Des fois ça ne marche pas, vérifiez l'exactitude de l'adresse, la connexion
- internet et la bonne configuration de l'ordinateur.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -2661,6 +2877,20 @@ Une image
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Parfois fois ça ne marche pas, vérifiez l'exactitude de l'adresse, la connexion
+ internet et la bonne configuration de l'ordinateur.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Si on déplace la flèche au-dessus d'un lien, la flèche devient une main.
  Ceci veut dire qu'on peut suivre le lien qui se trouve en-dessous de la
  main.
@@ -2672,18 +2902,273 @@ Chaque fois qu'on suit un lien, on voit la nouvelle adresse s'afficher dans
 \emph on
 barre URL
 \emph default
- du navigateur
-\begin_inset Marginal
+ du navigateur.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Il y a certaines exceptions à cette règle, mais normalement on peut se fier
- à ça
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recharger
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arrêt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Accueil
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recherche
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "1cm"
+special "none"
+height "1.5cm"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/firefox_back.png
+	width 0.75cm
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
-.
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "1cm"
+special "none"
+height "1.5cm"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/firefox_reload.png
+	width 1cm
+	BoundingBox 14bp 0bp 38bp 24bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "1cm"
+special "none"
+height "1.5cm"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/firefox_stop.png
+	width 1cm
+	BoundingBox 20bp 0bp 44bp 24bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "1cm"
+special "none"
+height "1.5cm"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/firefox_home.png
+	width 1cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "5cm"
+special "none"
+height "1.5cm"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/firefox_search.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Quelques boutons dans un navigateur qui sont très utiles.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2706,7 +3191,7 @@ Recharger la page
 \end_layout
 
 \begin_layout Standard
-Le symbole pour recharger la page est désigné par deux flèches qui forment
+Le symbole pour recharger la page est désigné par une flèches qui forme
  un cercle.
  Ce bouton est nécessaire parce que le navigateur ne remet pas à jour automatiqu
 ement toutes les pages affichées.
@@ -2716,11 +3201,14 @@ ement toutes les pages affichées.
 recharger
 \emph default
  et vous voyez la dernière page de nouvelles sur votre écran.
-\begin_inset Marginal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
 status open
 
 \begin_layout Plain Layout
-Avec le bouton F5 ou (ctrl-r) vous pouvez faire la même chose
+Avec le bouton F5 ou (ctrl-r) vous pouvez aussi recharger la page.
 \end_layout
 
 \end_inset
@@ -2739,14 +3227,18 @@ Arrêt
 \end_layout
 
 \begin_layout Standard
-Ce bouton est désigné par un cercle rouge avec une croix en biais dedans.
+Ce bouton est désigné par une croix en biais, qui se trouve des fois dans
+ un cercle rouge, selon le navigateur (Firefox, Chrome, Internet Explorer).
  Il est utilisé pour arrêter le chargement d'une page qui prend beaucoup
  de temps.
-\begin_inset Marginal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
 status open
 
 \begin_layout Plain Layout
-Ou utilisez le bouton (esc) en haut à gauche
+Ou utilisez le bouton (esc) en haut à gauche pour arrêter le chargement.
 \end_layout
 
 \end_inset
@@ -2763,6 +3255,58 @@ En cliquant sur le bouton désigné avec une maison, on peut revenir sur la
  page d'accueil telle que définie dans la configuration.
  Cette page est la page principale qui s'affiche au chargement du navigateur
  et elle peut être choisi librement.
+\end_layout
+
+\begin_layout Subsubsection
+Recherche
+\end_layout
+
+\begin_layout Standard
+Une option qu'on oublie souvent est le fait de démarrer une recherche directemen
+t à partir de la boîte en haut à droite du navigateur.
+ Dès qu'on y met quelques mots de clés et qu'on confirme avec la touche
+ 
+\emph on
+Entrée
+\emph default
+, une recherche est automatiquement lancée.
+\end_layout
+
+\begin_layout Standard
+Vous pouvez aussi choisir le moteur de recherche en cliquant sur le bouton
+ toute à gauche de la boîte de recherche.
+\end_layout
+
+\begin_layout Subsection
+Augmenter la sécurité et réduire le temps de chargement
+\end_layout
+
+\begin_layout Standard
+Avec le logiciel Firefox vous pouvez installer des 
+\emph on
+Modules complémentaires
+\emph default
+.
+ Deux modules sont très pratique pour la navigation de tout les jours:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Adblock qui supprimer la plupart des publicités qui se trouvent sur les
+ sites, et qui permet ainsi de réduire le temps de chargement de certains
+ sites
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Flashblock permet d'éviter un chargement automatique de films sur les sites,
+ tout en laissant la possibilité de choisir ceux qu'on veut quand même regarder
+\end_layout
+
+\begin_layout Standard
+Les deux modules peuvent s'installer très facilement à partir du serveur
+ Profeda.
+ Demandez à votre enseignant pour plus d'informations.
 \end_layout
 
 \begin_layout Section
@@ -2785,16 +3329,67 @@ Ces sites sont stockés directement sur notre équipement, et c'est donc beaucou
  plus rapide que de passer par internet.
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-Profeda.org site principale de l'organisation qui s'occupe de l'équipement
-\begin_inset Marginal
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
 status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="right" valignment="middle" width="3cm">
+<column alignment="right" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+profeda.org
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+site principale de l'organisation qui s'occupe de l'équipement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Images/profeda-logo.png
-	lyxscale 20
+	lyxscale 30
 	width 3cm
 
 \end_inset
@@ -2803,14 +3398,131 @@ status open
 \end_layout
 
 \end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+local.profeda.org
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+accès à la page avec des informations locales
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+files.profeda.org
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fichiers à télécharger gratuitement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+wikis.profeda.org
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+site avec des informations sur beaucoup de sujets, en français
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+admin.profeda.org
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+chat et gestion locale
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
 
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-wikipedia.profeda.org site avec des informations sur beaucoup de sujets, en
- français
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2829,53 +3541,119 @@ Contrairement aux sites locaux, ces sites-là ont besoin d'une connexion
 Recherche et informations
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-google.fr Le site de recherche connu par tout le monde
-\begin_inset Marginal
-status open
+\begin_layout Standard
+Un très grand avantage de l'internet est le fait qu'on peut chercher de
+ l'information sur n'importe quoi en très peu de temps.
+ En même temps ceci est aussi un désavantage, parce que n'importe qui peut
+ écrire n'importe quoi sur internet.
+ Il faut donc toujours vérifier les sources et ne pas croire tout ce qu'on
+ peut lire sur internet!
+\end_layout
+
+\begin_layout Standard
+Avec un peu de recul par contre, internet est une source inestimable pour
+ l'apprentissage de pratiquement n'importe quel domaine.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Images/google-logo.jpg
-	lyxscale 20
-	width 3cm
 
-\end_inset
-
-
+\family typewriter
+google.fr
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-fr.wikipedia.org Le site francophone de l'encyclopédie en ligne
-\begin_inset Marginal
-status open
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Images/Wikipedia-logo.png
-	lyxscale 20
-	width 3cm
+Le site de recherche connu par tout le monde
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+news.google.fr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Une recherche pour les nouvelles du monde entier
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+fr.wikipedia.org
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Le site francophone de l'encyclopédie en ligne
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ar.wikipedia.org
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L'encyclopédie en arabe
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-ar.wikipedia.org L'encyclopédie en arabe
 \end_layout
 
 \begin_layout Subsubsection
@@ -2889,49 +3667,263 @@ Il faut noter que les sites de nouvelles donnent seulement une partie de
  idée de l'actualité.
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-rfi.fr Le site de nouvelles qui va avec la radio
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+rfi.fr
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-bbcafrique.com La BBC avec les nouvelles pour l'Afrique
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Le site de nouvelles qui va avec la radio
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-aljazeera.com Les nouvelles selon AlJazeera
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+bbcafrique.com
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+La BBC avec les nouvelles pour l'Afrique
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+aljazeera.com
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Les nouvelles selon AlJazeera
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
 Sites spécifiques tchadiens
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-presidencetchad.org Des informations officielles du président
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top" width="8cm">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+presidencetchad.org
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-ndjamena-matin.com Un journal de la capitale
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Des informations officielles du président
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ndjamena-matin.com
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Un journal de la capitale
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
 Divertissement
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-facebook.com LE site social du web
-\begin_inset Marginal
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+facebook.com
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LE site social du web
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+plus.google.fr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Le deuxième site social du web, fait par Google, respectant beaucoup plus
+ la vie privée
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/google-logo.jpg
+	lyxscale 20
+	width 3cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/Wikipedia-logo.png
+	lyxscale 20
+	width 3cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Images/facebooklogo.png
-	lyxscale 20
+	lyxscale 50
 	width 3cm
 
 \end_inset
@@ -2940,27 +3932,21 @@ status open
 \end_layout
 
 \end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
 
 
 \end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-plus.google.fr Le deuxième site social du web, fait par Google, respectant
- beaucoup plus la vie privée
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-tchad-amitie.com Le site social du tchad
-\begin_inset Marginal
-status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Images/tchad-amitie.png
-	lyxscale 20
-	width 3cm
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Quelques grandes entreprises de l'internet
+\end_layout
 
 \end_inset
 
@@ -3086,7 +4072,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
@@ -3172,12 +4158,12 @@ Trop spécifique
 \end_layout
 
 \begin_layout Standard
-Alors vous essayez d'ajouter quelques mos clés, afin de mieux cibler la
+Alors vous essayez d'ajouter quelques mots clés, afin de mieux cibler la
  recherche:
 \end_layout
 
 \begin_layout LyX-Code
-dernier recensement tchad 2010 N'Djaména
+dernier recensement Tchad 2010 N'Djaména
 \end_layout
 
 \begin_layout LyX-Code
@@ -3196,25 +4182,29 @@ Le bon choix
 \begin_layout Standard
 Voici un exemple qui peut vous donner les résultat du recensement 2010 fait
  au Tchad
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Trouver le bon choix pour la recherche peut devenir un art
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout LyX-Code
-recensement tchad 2010 résultats
+recensement Tchad 2010 résultats
 \end_layout
 
 \begin_layout Standard
 En regardant les premiers résultats, vous pouvez choisir la page qui vous
  intéresse.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Trouver le bon choix pour la recherche peut devenir un art et doit être
+ entraîné à chaque occasion possible.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3224,19 +4214,19 @@ La diversité
 \begin_layout Standard
 Sur des sujets compliqués, il est parfois utile de prendre plusieurs résultats
  et de lire les pages concernées.
- Ceci peut vous aider à vous faire une idée plus complête du sujet.
+ Ceci peut vous aider à vous faire une idée plus complète du sujet.
  Si vous faites par exemple une recherche sur
 \end_layout
 
 \begin_layout LyX-Code
-politique francaise
+politique française
 \end_layout
 
 \begin_layout Standard
 vous allez trouver beaucoup d'informations sur tout ce qui touche à leur
  politique.
  Vous allez trouver le pour et le contre, des gens qui sont content et des
- gens qui sont mécontants.
+ gens qui sont mécontents.
  Ce sujet est tellement vaste, qu'il n'y a probablement personne qui peut
  le connaître en entier.
 \end_layout
@@ -3258,12 +4248,15 @@ collaborative
 \emph default
 parfois plus simple de chercher directement sur Wikipedia, au lieu de passer
  par Google.
-\begin_inset Marginal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
 status open
 
 \begin_layout Plain Layout
-Collaboratif veut dire que plusieurs personnes travaillent à l'élaboration
- des pages.
+Collaboratif veut dire que plusieurs personnes travaillent librement à l'élabora
+tion des pages.
  Malgré l'anarchie possible, il est intéressent de voir comment cette approche
  collaborative a donné l'encyclopédie la plus complète disponible librement.
 \end_layout
@@ -3284,17 +4277,6 @@ Si vous voulez visiter Wikipedia, il vous suffit d'entrer l'adresse suivant
 
 \begin_layout LyX-Code
 fr.wikipedia.org
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Si la connexion internet ne le permet pas, vous pouvez aussi essayer wikipedia.pr
-ofeda.org
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3312,6 +4294,20 @@ Tchad
 \begin_layout Standard
 Dans la page de résultats, vous trouvez au début un lien sur la page qui
  contient des informations sur le pays de Toumaï.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
+
+\begin_layout Plain Layout
+Si la connexion internet ne le permet pas, vous pouvez aussi essayer wikis.profed
+a.org
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3350,31 +4346,9 @@ Introduction
 \begin_layout Standard
 Comme on l'a déjà vu dans l'introduction, l'e-mail est une des applications
  la plus vieille de l'internet.
- C'est un message qui part d'un expéditeur à un destinaire.
+ C'est un message qui part d'un expéditeur à un destinataire.
  L'adresse est toujours du format nom@site.tld où le nom peut être choisi
- librement
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Il ne doit pas contenir plus de 32 caractères et seulement être composé
- de l'alphabet anglais plus les chiffres 0-9 et quelques signes spéciaux:
- -_.
-\end_layout
-
-\end_inset
-
- et la partie à droite de l'arobase (le signe @) désigne l'entité
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Ceci peut être intnet.td, yahoo.fr, yahoo.com, hotmail.com, markas-al-nour.org,
- novotel.com, ...
-\end_layout
-
-\end_inset
-
+ librement et la partie à droite de l'arobase (le signe @) désigne l'entité
  à qui l'adresse appartient.
 \end_layout
 
@@ -3382,18 +4356,38 @@ Ceci peut être intnet.td, yahoo.fr, yahoo.com, hotmail.com, markas-al-nour.org,
 Depuis quelques années on voit aussi le désavantage de ce nouveau médium.
  Avec la facilité de joindre des milliers de personnes en même temps il
  y a un grand nombre d'abus qui se sont installés.
- Les e-mails indésirés sont communément désignés comme SPAM
-\begin_inset Marginal
+ Les e-mails indésirés sont communément désignés comme SPAM (ce mot désigne
+ la viande de porc hachée et emboîtée) et de nos jours c'est impensable
+ d'avoir une boîte e-mail sans une protection contre ce genre de courriel.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
 status open
 
 \begin_layout Plain Layout
-SPAM - ce mot désigne la viande de porc hachée et emboîtée.
+Le nom ne doit pas contenir plus de 32 caractères et seulement être composé
+ de l'alphabet anglais plus les chiffres 0-9 et quelques signes spéciaux:
+ -_.
 \end_layout
 
 \end_inset
 
- et de nos jours c'est impensable d'avoir une boîte e-mail sans une protection
- contre ce genre de courriel.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status open
+
+\begin_layout Plain Layout
+Le service peut être intnet.td, yahoo.fr, yahoo.com, hotmail.com, markas-al-nour.org,
+ novotel.com, ...
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3401,33 +4395,39 @@ Les récepteur A, CC et CCi
 \end_layout
 
 \begin_layout Standard
-Pour envoyer un e-mail, il existe plusieurs possibilités pour les destinaires.
+Pour envoyer un e-mail, il existe plusieurs possibilités pour les destinataires.
  Quand on utilise le yahoo, d'abord on ne voit que la partie 
 \emph on
 A
 \emph default
- pour mettre un destinaire direct du mail.
- Cette solution se prête très bien si on n'a qu'un ou deux destinaires.
+ pour mettre un destinataire direct du mail.
+ Cette solution se prête très bien si on n'a qu'un ou deux destinataires.
 \end_layout
 
 \begin_layout Standard
-Si on veut par contre envoyer son mail à plusieurs personnes, il faut refléchir
+Si on veut par contre envoyer son mail à plusieurs personnes, il faut réfléchir
  à les envoyer différemment.
- On a deux choix:
+ On a trois choix:
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-CC Copie Carbon
+A Destinataires principal de qui on attend une réponse
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-CCi Copie Carbon invisible
+CC Personne éventuellement intéressée, mais pas nécessairement pour une
+ réponse
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CCi Pour des listes de diffusion, lettres de nouvelles ou pub
 \end_layout
 
 \begin_layout Standard
-Chaque destinaire du message peut voir les personnes mises dans le champ
+Chaque destinataire du message peut voir les personnes mises dans le champ
  
 \emph on
 CC
@@ -3437,7 +4437,7 @@ CC
 CCi
 \emph default
 .
- Si par example on envoie un email avec les deux champs remplis comme suit:
+ Si par exemple on envoie un email avec les deux champs remplis comme suit:
 \end_layout
 
 \begin_layout Labeling
@@ -3453,11 +4453,11 @@ CC Directeur
 \begin_layout Standard
 alors le professeur va recevoir le mail et voir que le directeur a aussi
  reçu le mail.
- En règle générale, on dit que le destinaire dans la partie 
+ En règle générale, on dit que le destinataire dans la partie 
 \emph on
 A
 \emph default
- est celui de qui on veut une réponse, tandis que le destinaire dans la
+ est celui de qui on veut une réponse, tandis que le destinataire dans la
  partie 
 \emph on
 CC
@@ -3482,12 +4482,12 @@ CCi Mahammat, Séidé, Youssouf, Umar, Zara
 \end_layout
 
 \begin_layout Standard
-Maintenant tous les destinaires (Mahamat, Séidé, Youssouf, Umar et Zara)
+Maintenant tous les destinataires (Mahamat, Séidé, Youssouf, Umar et Zara)
  ne voient que la partie 
 \emph on
 A
 \emph default
-, mais ils ne peuvent pas voir tous les destinaires.
+, mais ils ne peuvent pas voir tous les destinerais.
  Ceci est très pratique quand on envoie un message à beaucoup de personnes,
  par exemple pour des lettres de nouvelles ou de la publicité.
  Il est d'usage de mettre son propre nom dans la partie 
@@ -3495,36 +4495,6 @@ A
 A
 \emph default
 .
-\end_layout
-
-\begin_layout Standard
-En résumé, on peut définir les trois champs comme suit:
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-La partie CCi n'est que rarement utilisé
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-A Destinaire principal de qui on attend une réponse
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-CC Personne éventuellement intéressée, mais pas nécessairement pour une
- réponse
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-CCi Pour des listes de diffusion, lettres de nouvelles ou pub
 \end_layout
 
 \begin_layout Subsection
@@ -3582,11 +4552,11 @@ L'achat des produits pharmaceutiques à des prix avantageux
 \begin_layout Standard
 En général on peut dire que si vous vous imaginez quelqu'un dans la rue
  vous faire un tel propos, et que vous pensez 
-\begin_inset Quotes eld
+\begin_inset Quotes fld
 \end_inset
 
 il doit être fou
-\begin_inset Quotes erd
+\begin_inset Quotes frd
 \end_inset
 
 , vous pouvez en déduire la même chose pour cet e-mail.
@@ -3658,22 +4628,25 @@ Captchas
 
 \begin_layout Standard
 Pendant l'inscription, un des champs à remplir est utilisé pour s'assurer
- que vous n'êtes pas un ordinateur en train de faire une inscription automatique
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Pour les fournisseurs de courriel, il est important de n'avoir que des comptes
- rééls, afin d'éviter la distribution de SPAM
-\end_layout
-
-\end_inset
-
-.
+ que vous n'êtes pas un ordinateur en train de faire une inscription automatique.
  La meilleure façon à ce jour de s'assurer qu'il y a un être humain qui
  est en train de s'inscrire pour l'e-mail, est la présentation d'une image
  qui contient des lettres et des chiffres, et qu'il faut entrer dans un
  champs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
+
+\begin_layout Plain Layout
+Pour les fournisseurs de courriel, il est important de n'avoir que des comptes
+ réels, afin d'éviter la distribution de SPAM.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3719,7 +4692,7 @@ Versions de l'interface
 \begin_layout Standard
 Une fois le compte inscrit, vous êtes présenté avec une interface dans le
  navigateur, où vous pouvez travailler sur votre boîte courriel.
- Et Yahoo et Gmail vous proposent une interface simplifée qui se charge
+ Et Yahoo et Gmail vous proposent une interface simplifiée qui se charge
  plus rapidement que l'interface complète.
  Pour les connexions disponibles ici au Tchad, il est toujours préférable
  d'utiliser la version simplifiée de l'interface.
@@ -3728,25 +4701,31 @@ Une fois le compte inscrit, vous êtes présenté avec une interface dans le
 version de base
 \emph default
 .
-\end_layout
+\begin_inset Note Note
+status open
 
 \begin_layout Subsubsection
 Interface local
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Dans les cours qui sont équipés d'un serveur DreamPlug, il est également
  possible de se rendre sur l'adresse
 \end_layout
 
 \begin_layout LyX-Code
-http://profeda.wifi/squirrelmail
+http://mail.profeda.org
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 et de se connecter avec son nom et mot de passe gmail.
  Avec beaucoup d'utilisateurs en même temps, il se peut que cette interface
  soit plus rapide que l'interface simplifiée de Gmail.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3818,21 +4797,11 @@ Il y a trois champs à remplir:
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 sujet pour aider à retrouver ce message plus tard
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-Le sujet est très important pour retrouver les courriels plus tard
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-contenu le text lui-même que vous désirez envoyer au récepteur du message
+contenu le texte lui-même que vous désirez envoyer au récepteur du message
 \end_layout
 
 \begin_layout Standard
@@ -3841,6 +4810,19 @@ Une fois que votre message est terminé, vous pouvez appuyer sur
 envoyer
 \emph default
  et attendre de recevoir la confirmation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
+
+\begin_layout Plain Layout
+Le sujet est très important pour retrouver les courriels plus tard
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3876,7 +4858,7 @@ Préparation présentations
 
 \begin_layout Standard
 Afin de pouvoir s'exercer avec PowerPoint et l'internet on vous demande
- de préparer une présentation sur un sujet que vous choissisiez.
+ de préparer une présentation sur un sujet que vous choisissiez.
  Voici les étapes que vous allez faire :
 \end_layout
 
@@ -3887,15 +4869,15 @@ Choisir un sujet
 \begin_deeper
 \begin_layout Enumerate
 Avis : choisir un sujet qui vous intéresse, un sujet que vous voulez comprendre.
- Ne choissisez pas un sujet trop vaste (histoire de l'Afrique), mais plutôt
+ Ne choisissez pas un sujet trop vaste (histoire de l'Afrique), mais plutôt
  un sujet qui pourra être traiter dans une présentation d'environ 10 minutes.
 \end_layout
 
 \begin_layout Enumerate
 Exemples : histoire du kanem, moyens d'améliorer sa récolte de mil, types
- de construction de maison au tchad, reparation d'un moto, coupe du monde
- 2014 ; ou bien choissisez un écrivain, un chanteur ou un politicien sur
- qui vous aimerez savoir plus.
+ de construction de maison au tchad, réparation d'un moto, CAN 2016 ; ou
+ bien choisissez un écrivain, un chanteur ou un politicien sur qui vous
+ aimerez savoir plus.
  Enfin les sujets sont sans nombre, et le choix c'est à vous !
 \end_layout
 
@@ -3911,7 +4893,7 @@ Créer des diapositives pour chaque élément de votre esquisse, mettant l'élé
 \end_layout
 
 \begin_layout Enumerate
-Devélopper les diapositives à partir des recherches sur Google et Wikipedia
+Développer les diapositives à partir des recherches sur Google et Wikipedia
 \end_layout
 
 \begin_layout Standard
@@ -3919,20 +4901,6 @@ Devélopper les diapositives à partir des recherches sur Google et Wikipedia
 placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
@@ -3963,7 +4931,7 @@ Utilisation
 \end_layout
 
 \begin_layout Enumerate
-Problèmes dûs à la sécheresse
+Problèmes dus à la sécheresse
 \end_layout
 
 \end_deeper
@@ -3981,13 +4949,8 @@ Possibilités pour une utilisation durable
 \end_layout
 
 \end_deeper
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Première exemple d'une esquisse
@@ -4008,20 +4971,6 @@ Première exemple d'une esquisse
 placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
@@ -4070,13 +5019,8 @@ Projets pour l'Afrique tout entière
 \end_layout
 
 \end_deeper
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Deuxième exemple d'une esquisse
@@ -4093,6 +5037,139 @@ Deuxième exemple d'une esquisse
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+Sujet : L'économie du Tchad
+\end_layout
+
+\begin_layout Enumerate
+Introduction
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Les secteurs
+\end_layout
+
+\begin_layout Enumerate
+Les exportations
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+L'agriculture et l'élevage
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Défis de cohabitation
+\end_layout
+
+\begin_layout Enumerate
+Utilisation de machines dans l'agriculture
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Le secteur informel
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Exemples d'activités
+\end_layout
+
+\begin_layout Enumerate
+Aide internationale
+\end_layout
+
+\end_deeper
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Troisième exemple d'une esquisse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+Sujet : La Tunisie
+\end_layout
+
+\begin_layout Enumerate
+Introduction
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Géographie
+\end_layout
+
+\begin_layout Enumerate
+Population
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Histoire
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jusqu'au XVème siècle
+\end_layout
+
+\begin_layout Enumerate
+L'indépendance
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+La révolution 2010-2011
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Situation de la population avant
+\end_layout
+
+\begin_layout Enumerate
+L'élément déclencheur
+\end_layout
+
+\end_deeper
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Quatrième exemple d'une esquisse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Votre enseignant vous indiquera combien de temps vous aurez pour préparer
  vos présentations.
  Normalement la présentation d'une diapositive prendra une minute, donc
@@ -4127,9 +5204,12 @@ Juste après les diapositives, les gens vont vous regarder, vous.
  La façon dont vous vous tenez va beaucoup changer la présentation et  si
  les gens vous suivent ou non.
  Ici on suppose que l'assemblée est installé sur des chaises vis-à-vis de
- vous, et que vous vous tenez debouts devant eux.
-\begin_inset Marginal
-status open
+ vous, et que vous vous tenez debout devant eux.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
 
 \begin_layout Plain Layout
 Si tout le monde est assis, certains conseils (comme la direction et les
@@ -4263,16 +5343,21 @@ Intéresser les gens
 \begin_layout Standard
 Une autre chose à éviter est de lire de longs passages directement depuis
  une diapositive.
-\begin_inset Marginal
-status open
+ Si possible ne regardez pas trop la diapositive et parlez librement.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Information
+status collapsed
 
 \begin_layout Plain Layout
-La seule exception est si vous avez une citation à faire.
+Si vous avez une citation à faire, vous pouvez bien sûr lire ce qui est
+ écrit sur la diapositive.
 \end_layout
 
 \end_inset
 
- Si possible ne regardez pas trop la diapositive et parlez librement.
+
 \end_layout
 
 \begin_layout Section
